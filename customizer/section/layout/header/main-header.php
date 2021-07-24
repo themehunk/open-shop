@@ -1,5 +1,22 @@
 <?php
 // main header
+
+/***************************************/
+// Disable product category search box
+/****************************************/
+
+$wp_customize->add_setting( 'open_shop_cat_search_disable', array(
+                'default'               => false,
+                'sanitize_callback'     => 'open_shop_sanitize_checkbox',
+            ) );
+$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'open_store_cat_search_disable', array(
+                'label'                 => esc_html__('Check to disable Category in Search Box', 'open-shop'),
+                'type'                  => 'checkbox',
+                'section'               => 'open-shop-main-header',
+                'settings'              => 'open_shop_cat_search_disable',
+                'priority'   => 1,
+            ) ) );
+
 // choose col layout
 if(class_exists('Open_Shop_WP_Customize_Control_Radio_Image')){
         $wp_customize->add_setting(
