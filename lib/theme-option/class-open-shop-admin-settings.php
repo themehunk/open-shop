@@ -556,6 +556,9 @@ if ( ! class_exists( 'Open_Shop_Admin_Settings' ) ){
 		        $detail= '';
                 }elseif($plugin_slug=='woocommerce'){
                 	echo'<img src="'.esc_url(OPEN_SHOP_THEME_URI. 'lib/theme-option/assets/images/woocommerce.png' ).'" />'; 
+                $detail= '';
+                }elseif($plugin_slug=='th-variation-swatches'){
+                	echo'<img src="'.esc_url(OPEN_SHOP_THEME_URI. 'lib/theme-option/assets/images/th-variation-swatches.png' ).'" />';	
                 $detail='';
                 }elseif($plugin_slug=='woo-smart-wishlist'){
                 	echo'<img src="'.esc_url(OPEN_SHOP_THEME_URI. 'lib/theme-option/assets/images/wishlist.png' ).'" />'; 

@@ -401,7 +401,7 @@ function open_shop_product_search_box(){ ?>
    <input id='search-text' name='s' placeholder='<?php echo esc_attr(get_theme_mod('search_box_text',esc_attr_x( 'Search for Product', 'placeholder', 'open-shop' ))); ?>' class="form-control search-autocomplete" value='<?php echo get_search_query(); ?>' type='text' title='<?php echo esc_attr_x( 'Search for:', 'label', 'open-shop' ); ?>' />
    <div class="vert-brd" ></div>
    <?php 
-if ( class_exists( 'WooCommerce' ) ):
+if ( class_exists( 'WooCommerce' ) && get_theme_mod('open_shop_cat_search_disable')!==true ):
 $args = array(
    'taxonomy' => 'product_cat',
    'name' => 'product_cat',
