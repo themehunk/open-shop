@@ -383,6 +383,7 @@ $th_cat_slug = $cat_slug;
             'hide_empty' => 1,
             'posts_per_page' => $count,        
             'post_type' => 'product',
+            'post_status' => 'publish',
             'orderby' => 'date',
             'order' => 'DESC',
         );
@@ -439,6 +440,7 @@ function open_shop_post_query($query){
             'order' => 'DESC',
             'ignore_sticky_posts' => $query['sticky'],
             'post_type' => 'post',
+            'post_status' => 'publish',
             'posts_per_page' => $query['count'], 
             'cat' => $query['cate'],
             'meta_key'     => '_thumbnail_id',
