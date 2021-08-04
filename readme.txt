@@ -23,10 +23,14 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
 == Changelog ==
 
+
+
 = 1.2.9 =
 * Customizer Draft issue fixed.
 * Post Publish Issue fixed.
 * Image cropping issue fixed.
+* Sidebar widget font issue fixed.
+* Footer widtet font issue fixed.
 
 = 1.2.8 =
 * Product search updated.
