@@ -4,7 +4,7 @@ Tags: e-commerce, blog, grid-layout, one-column, two-columns, three-columns, fou
 Requires at least: WordPress 4.7
 Requires PHP: 5.6
 Tested up to: 5.8
-Stable tag: 1.2.9
+Stable tag: 1.3.0
 License: GPLv3 or later
 License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -24,6 +24,9 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 == Changelog ==
 
 
+
+= 1.3.0 =
+* Product search updated.
 
 = 1.2.9 =
 * Customizer Draft issue fixed.
@@ -142,12 +145,13 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 Initial release
 
 == Upgrade Notice ==
-= 1.2.4 =
-* Product loop Improved.
-* Front Product limit option Add Product style Section in Customizer.
-* Slider Speed added.
-* Style issue resolved.
-* Header Image issue resolved.
+= 1.3.0 =
+* Product search updated.
+* Customizer Draft issue fixed.
+* Post Publish Issue fixed.
+* Image cropping issue fixed.
+* Sidebar widget font issue fixed.
+* Footer widtet font issue fixed.
 
 == Resources ==
  
