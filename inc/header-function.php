@@ -1,4 +1,5 @@
 <?php 
+include_once 'product-search.php';
 /**
  * Header Function for open shop theme.
  * 
@@ -238,6 +239,8 @@ $open_shop_menu_open = get_theme_mod('open_shop_mobile_menu_open','left');
              <?php  
               if ( class_exists( 'WooCommerce' ) ){
                   open_shop_product_search_box();
+                echo open_shop_product_search_box(!get_theme_mod('open_shop_cat_search_disable'));
+                
                }
             ?>
          </div>
@@ -392,33 +395,6 @@ if( $description || is_customize_preview() ):?>
     } 
   }
 }
-/***************************/
-// Product search
-/***************************/
-function open_shop_product_search_box(){ ?>             
-<div id='search-box' class="wow thmkfadeInDown" data-wow-duration="1s">
-<form action='<?php echo esc_url( home_url( '/'  ) ); ?>' id='search-form' class="woocommerce-product-search" method='get' target='_top'>
-   <input id='search-text' name='s' placeholder='<?php echo esc_attr(get_theme_mod('search_box_text',esc_attr_x( 'Search for Product', 'placeholder', 'open-shop' ))); ?>' class="form-control search-autocomplete" value='<?php echo get_search_query(); ?>' type='text' title='<?php echo esc_attr_x( 'Search for:', 'label', 'open-shop' ); ?>' />
-   <div class="vert-brd" ></div>
-   <?php 
-if ( class_exists( 'WooCommerce' ) && get_theme_mod('open_shop_cat_search_disable')!==true ):
-$args = array(
-   'taxonomy' => 'product_cat',
-   'name' => 'product_cat',
-   'value_field' => 'slug',
-   'class' => 'something',
-   'show_option_all'   => __('All Category','open-shop'),
-);
-wp_dropdown_categories( $args );
-endif;
-?>
-                        <button id='search-button' value="<?php echo esc_attr_x( 'Submit','submit button', 'open-shop' ); ?>" type='submit'>                     
-                          <?php echo esc_html__( 'Search', 'open-shop' ); ?>
-                        </button>
-                        <input type="hidden" name="post_type" value="product" />
-                       </form>
- </div>                    
-<?php }
 /**********************************/
 // header icon function
 /**********************************/
