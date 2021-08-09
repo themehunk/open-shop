@@ -27,6 +27,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
 = 1.3.0 =
 * Product search updated.
+* Theme make compatible with Th variation swatches plugin
 
 = 1.2.9 =
 * Customizer Draft issue fixed.
