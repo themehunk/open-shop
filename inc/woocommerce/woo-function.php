@@ -22,6 +22,29 @@ if ( ! function_exists( 'open_shop_cart_total_item' ) ){
   <a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart','open-shop' ); ?>"><i class="fa fa-shopping-basket"></i> <span class="cart-content"><?php echo sprintf ( _n( '<span class="count-item">%d <span class="item">'.__('item','open-shop').'</span></span>', '<span class="count-item">%d <span class="item">'.__('items','open-shop').'</span></span>', WC()->cart->get_cart_contents_count() ,'open-shop'), WC()->cart->get_cart_contents_count(),'open-shop' ); ?><?php echo WC()->cart->get_cart_total(); ?></span></a>
   <?php }
 }
+
+
+// check wihsh list
+if(!function_exists('open_shop_whishlist_check')){
+
+function open_shop_whishlist_check($pid){
+      if( class_exists( 'YITH_WCWL' ) ){
+        echo open_shop_whish_list($pid);
+        }elseif( class_exists( 'WPCleverWoosw' )){
+        echo open_shop_wpc_whish_list($pid);          
+    }
+
+     if( class_exists( 'YITH_Woocompare' ) ){
+        echo open_shop_add_to_compare_fltr($pid);
+        }elseif( class_exists( 'WPCleverWoosc' )){
+        echo open_shop_wpc_add_to_compare_fltr($pid);          
+    }
+
+}
+
+}
+
+
 //cart view function
 function open_shop_menu_cart_view($cart_view){
 	global $woocommerce;
@@ -255,52 +278,50 @@ if( ! function_exists( 'open_shop_single_summary_end' ) ){
 add_action( 'woocommerce_before_single_product_summary', 'open_shop_single_summary_start',0);
 add_action( 'woocommerce_after_single_product_summary', 'open_shop_single_summary_end',0);
 
-function openshop_lite_plugin_get_version(){
-if(is_plugin_active( 'hunk-companion/hunk-companion.php' )){  
-$plugin_data = get_plugin_data(WP_PLUGIN_DIR . '/hunk-companion/hunk-companion.php');
-$plugin_version = $plugin_data['Version'];
-return $plugin_version;
-}
-}
+
 /****************/
-// add to compare
+// YITH add to compare
 /****************/
-if(openshop_lite_plugin_get_version() > '1.4.12' ){
+
 function open_shop_add_to_compare_fltr($pid){
-      $product_id = $pid;
-        if( is_plugin_active('yith-woocommerce-compare/init.php') && (! class_exists( 'WPCleverWooscp' ))){
-          echo '<div class="thunk-compare"><span class="compare-list"><div class="woocommerce product compare-button"><a href="'.home_url().'?action=yith-woocompare-add-product&id='.$product_id.'" class="compare button" data-product_id="'.$product_id.'" rel="nofollow">Compare</a></div></span></div>';
+            if( class_exists( 'YITH_Woocompare' ) ){
 
-           }
-           if( ( class_exists( 'WPCleverWooscp' ))){
-           echo '<div class="thunk-compare">'.do_shortcode('[wooscp id='.$product_id.']').'</div>';
-         }
-        }
-      }else{
-function open_shop_add_to_compare_fltr(){
-  global $product;
-      $product_id = $product->get_id();
-        if( is_plugin_active('yith-woocommerce-compare/init.php') && (! class_exists( 'WPCleverWooscp' ))){
-          echo '<div class="thunk-compare"><span class="compare-list"><div class="woocommerce product compare-button"><a href="'.home_url().'?action=yith-woocompare-add-product&id='.$product_id.'" class="compare button" data-product_id="'.$product_id.'" rel="nofollow">Compare</a></div></span></div>';
-
-           }
-           if( ( class_exists( 'WPCleverWooscp' ))){
-           echo '<div class="thunk-compare">'.do_shortcode('[wooscp id='.$product_id.']').'</div>';
-         }
-        }
-
+          echo '<div class="thunk-compare"><span class="compare-list"><div class="woocommerce product compare-button"><a href="'.home_url().'?action=yith-woocompare-add-product&id='.esc_attr($pid).'" class="compare button" data-product_id="'.esc_attr($pid).'" rel="nofollow">Compare</a></div></span></div>';
       }
+
+        }
+
 /**********************/
-/** wishlist **/
+/** YITH wishlist **/
 /**********************/
-function open_shop_whish_list($pid=''){
-        if( shortcode_exists( 'yith_wcwl_add_to_wishlist' ) && (! class_exists( 'WPCleverWoosw' ))){
+function open_shop_whish_list($pid){
+          if( class_exists( 'YITH_WCWL' ) ){
+
         echo '<div class="thunk-wishlist"><span class="thunk-wishlist-inner">'.do_shortcode('[yith_wcwl_add_to_wishlist product_id='.$pid.' icon="fa fa-heart" label='.__('wishlist','open-shop').' already_in_wishslist_text='.__('Already','open-shop').' browse_wishlist_text='.__('Added','open-shop').']' ).'</span></div>';
-       }
-       if( ( class_exists( 'WPCleverWoosw' ))){
+    }
+ }         
+
+
+/****************/
+// WPC add to compare
+/****************/
+
+function open_shop_wpc_add_to_compare_fltr($pid){
+    if( class_exists( 'WPCleverWoosc' ) ){
+           echo '<div class="thunk-compare"><span class="compare-list"><div class="woocommerce product compare-button">'.do_shortcode('[woosc id='.$pid.']').'</div></span></div>';
+         }
+     }
+
+/**********************/
+/** WPC WOOSW wishlist **/
+/**********************/
+
+function open_shop_wpc_whish_list($pid){
+    if( class_exists( 'WPCleverWoosw' ) ){
       echo '<div class="thunk-wishlist"><span class="thunk-wishlist-inner">'.do_shortcode('[woosw id='.$pid.']').'</span></div>';
-       }
- } 
+     }
+ }
+
 
 function open_shop_whishlist_url(){
 $wishlist_page_id =  get_option( 'yith_wcwl_wishlist_page_id' );

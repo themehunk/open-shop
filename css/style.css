@@ -3058,6 +3058,17 @@ button .btn-text {
     margin-right: 5px;
 }
 
+.thunk-compare .compare-button button:before {
+    content: "\f0ec";
+    font-family: 'fontawesome';
+    margin-right: 5px;
+}
+
+.thunk-compare .compare-button .woosc-btn{
+    background: transparent;
+}
+
+
 .thunk-wishlist, .thunk-compare {
     width: auto;
     display: inline-flex;
