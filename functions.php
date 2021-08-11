@@ -122,13 +122,13 @@ define( 'OPEN_SHOP_THEME_SETTINGS', 'open-shop-settings' );
                 'active_filename' => 'th-variation-swatches/th-variation-swatches.php',
             ),
 
-            'woo-smart-wishlist' => array(
-                 'name' => esc_html__( 'WPC Smart Wishlist for WooCommerce', 'open-shop' ),
-                 'active_filename' => 'woo-smart-wishlist/wpc-smart-wishlist.php',
+            'yith-woocommerce-wishlist' => array(
+                 'name' => esc_html__( 'YITH WooCommerce Wishlist', 'open-shop' ),
+                 'active_filename' => 'yith-woocommerce-wishlist/yith-woocommerce-wishlist.php',
              ),
-            'woo-smart-compare' => array(
-                 'name' => esc_html__( 'WPC Smart Compare for WooCommerce', 'open-shop' ),
-                 'active_filename' => 'woo-smart-compare/wpc-smart-compare.php',
+            'yith-woocommerce-compare' => array(
+                 'name' => esc_html__( 'YITH WooCommerce Compare', 'open-shop' ),
+                 'active_filename' => 'yith-woocommerce-compare/yith-woocommerce-compare.php',
              ),
             'lead-form-builder' => array(
                 'name' => esc_html__( 'Lead Form Builder', 'open-shop' ),
