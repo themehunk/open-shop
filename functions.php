@@ -322,6 +322,7 @@ if ( ! function_exists( 'wp_body_open' ) ) {
 		do_action( 'wp_body_open' );
 	}
 }
+
 /********************************************************/
 // Adding Dashicons in WordPress Front-end
 /********************************************************/

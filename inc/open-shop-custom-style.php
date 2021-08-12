@@ -343,18 +343,28 @@ $open_shop_style.="body.open-shop-dark a:hover, body.open-shop-dark .open-shop-m
 }
 
     //Hide yith if WPC SMART Icon 
-if( (class_exists( 'WPCleverWoosw' ))){
-$open_shop_style.=".woocommerce .entry-summary .yith-wcwl-add-to-wishlist{
+
+if( (class_exists( 'YITH_WCWL' )) ){
+$open_shop_style.=" .woocommerce .entry-summary .woosw-btn{
   display:none;
+}";
+
+}elseif((class_exists( 'WPCleverWoosw' ))){
+$open_shop_style.=" .woocommerce .entry-summary .yith-wcwl-add-to-wishlist{
+  display:none;
+}";
 }
-";
-}
-if( (class_exists( 'WPCleverWooscp' ))){
+
+if( (class_exists( 'YITH_Woocompare' )) ){
+$open_shop_style.=" .woocommerce .entry-summary .woosc-btn, .woocommerce-shop .woosc-btn{
+  display:none;
+}";
+}elseif((class_exists( 'WPCleverWoosc' ))){
 $open_shop_style.=" .woocommerce .entry-summary a.compare.button{
   display:none;
+}";
 }
-";
-}
+
 
 return $open_shop_style;
 }
