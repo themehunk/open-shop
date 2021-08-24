@@ -1,5 +1,4 @@
 <?php 
-include_once 'product-search.php';
 /**
  * Header Function for open shop theme.
  * 
@@ -538,8 +537,10 @@ add_action('open_shop_site_preloader','open_shop_preloader');
       <div class="search-wrapper">
                      <div class="container">
                       <div class="search-close"><a class="search-close-btn"></a></div>
-                     <?php  if ( class_exists( 'WooCommerce' ) ){
-                              open_shop_product_search_box();
+                     <?php 
+                      if ( class_exists( 'WooCommerce' ) ){
+
+                             echo open_shop_product_search_box();
                           } ?>
                        </div>
        </div> 

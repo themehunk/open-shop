@@ -38,6 +38,7 @@ get_template_part('customizer/customizer');
 /******************************/
 // woocommerce
 /******************************/
+get_template_part( 'inc/product-search');
 get_template_part( 'inc/woocommerce/woo-core');
 get_template_part( 'inc/woocommerce/woo-function');
 get_template_part('inc/woocommerce/woocommerce-ajax');
