@@ -27,6 +27,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 * Sticky product search issue fixed.
 
 = 1.3.0 =
+* Yith Plugin added.
 * Product search updated.
 * Theme make compatible with Th variation swatches plugin
 
@@ -148,6 +149,7 @@ Initial release
 
 == Upgrade Notice ==
 = 1.3.0 =
+* Yith Plugin added.
 * Product search updated.
 * Customizer Draft issue fixed.
 * Post Publish Issue fixed.

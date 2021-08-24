@@ -403,6 +403,7 @@ $acc_icon = get_theme_mod('open_shop_account_mobile_disable',false);
 ?>
 <div class="header-icon">
      <?php 
+     //Yith wishlist Icon
     if( class_exists( 'YITH_WCWL' ) && (! class_exists( 'WPCleverWoosw' ))){
       if($whs_icon == true){ 
        if (wp_is_mobile()!== true):
