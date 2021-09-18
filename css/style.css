@@ -3068,6 +3068,9 @@ button .btn-text {
     background: transparent;
 }
 
+.woocommerce-shop .woosc-btn{
+    background: transparent;
+}
 
 .thunk-wishlist, .thunk-compare {
     width: auto;
@@ -5175,10 +5178,6 @@ input[type="text"], input[type="email"], input[type="url"], textarea, input[type
     text-align: left;
     border: 0;
     padding: 20px;
-}
-
-.woocommerce-checkout #search-button {
-    top: 15px;
 }
 
 .woocommerce-checkout .thunk-content-wrap {
