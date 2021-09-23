@@ -117,6 +117,10 @@ define( 'OPEN_SHOP_THEME_SETTINGS', 'open-shop-settings' );
                 'name' => esc_html__( 'Woocommerce', 'open-shop' ),
                 'active_filename' => 'woocommerce/woocommerce.php',
             ),
+            'th-advance-product-search' => array(
+                'name' => esc_html__( 'Th Advance Product Search', 'open-shop' ),
+                'active_filename' => 'th-advance-product-search/th-advance-product-search.php',
+            ),
             'th-variation-swatches' => array(
                 'name' => esc_html__( 'Th Variation Swatches', 'open-shop' ),
                 'active_filename' => 'th-variation-swatches/th-variation-swatches.php',

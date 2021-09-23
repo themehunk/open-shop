@@ -24,6 +24,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 == Changelog ==
 
 = 1.3.2 =
+* Th advance product search plugin added.
 * Checkout page search button issue fixed.
 
 = 1.3.1 =
