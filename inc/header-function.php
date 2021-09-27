@@ -236,10 +236,13 @@ $open_shop_menu_open = get_theme_mod('open_shop_mobile_menu_open','left');
 				   </div>
            <div class="below-header-col2">
              <?php  
-              if ( class_exists( 'WooCommerce' ) ){
-                  open_shop_product_search_box();
-                echo open_shop_product_search_box(!get_theme_mod('open_shop_cat_search_disable'));
-                
+             if ( class_exists('TH_Advance_Product_Search')){
+               echo do_shortcode('[th-aps]');
+               }elseif ( !class_exists('TH_Advance_Product_Search') && is_user_logged_in()) {
+                $url = admin_url('themes.php?page=open-shop');
+                      echo '<a href="'.$url.'" target="_blank" class="plugin-active-msg">'.__('Please install th advance product search plugin','open-shop').'</a>';
+               }else{
+                echo "&nbsp&nbsp";
                }
             ?>
          </div>
@@ -539,10 +542,12 @@ add_action('open_shop_site_preloader','open_shop_preloader');
                      <div class="container">
                       <div class="search-close"><a class="search-close-btn"></a></div>
                      <?php 
-                      if ( class_exists( 'WooCommerce' ) ){
-
-                             echo open_shop_product_search_box();
-                          } ?>
+                if ( class_exists( 'WooCommerce' ) && class_exists('TH_Advance_Product_Search')){
+               echo do_shortcode('[th-aps]');
+               }elseif ( !class_exists('TH_Advance_Product_Search') && is_user_logged_in()) {
+                $url = admin_url('themes.php?page=open-shop');
+                      echo '<a href="'.$url.'" target="_blank" class="plugin-active-msg">'.__('Please install th advance product search plugin','open-shop').'</a>';
+               }?>
                        </div>
        </div> 
  <?php }
