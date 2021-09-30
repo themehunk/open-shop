@@ -7127,6 +7127,22 @@ h5.testimonial-position {
     font-size: 16px;
 }
 
+/* th advance product search */
+.below-header-col2 a.plugin-active-msg{
+    background-color: #5662eb;
+    display: block;
+    font-size: 14px;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+}
+.below-header-col2 a.plugin-active-msg:hover{
+text-decoration: underline !important;
+}
+
 @media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2)  and (orientation:landscape) {
     .thunk-product-hover {
         position: relative;
