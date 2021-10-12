@@ -111,41 +111,58 @@ define( 'OPEN_SHOP_THEME_SETTINGS', 'open-shop-settings' );
         add_theme_support( 'recommend-plugins', array(
              'hunk-companion' => array(
                 'name' => esc_html__( 'Hunk Companion', 'open-shop' ),
+                'img' => 'icon-128x128.png',
                 'active_filename' => 'hunk-companion/hunk-companion.php',
             ),
+
+            'one-click-demo-import' => array(
+                'name' => esc_html__( 'One Click Demo Import', 'open-shop' ),
+                'img' => 'icon-128x128.png',
+                'active_filename' => 'one-click-demo-import/one-click-demo-import.php',
+            ), 
             'woocommerce' => array(
                 'name' => esc_html__( 'Woocommerce', 'open-shop' ),
+                'img' => 'icon-128x128.png',
                 'active_filename' => 'woocommerce/woocommerce.php',
             ),
             'th-advance-product-search' => array(
                 'name' => esc_html__( 'Th Advance Product Search', 'open-shop' ),
+                'img' => 'icon-128x128.gif',
                 'active_filename' => 'th-advance-product-search/th-advance-product-search.php',
             ),
             'th-variation-swatches' => array(
                 'name' => esc_html__( 'Th Variation Swatches', 'open-shop' ),
+                'img' => 'icon-128x128.gif',
                 'active_filename' => 'th-variation-swatches/th-variation-swatches.php',
             ),
 
             'yith-woocommerce-wishlist' => array(
                  'name' => esc_html__( 'YITH WooCommerce Wishlist', 'open-shop' ),
+                 'img' => 'icon-128x128.jpg',
                  'active_filename' => 'yith-woocommerce-wishlist/yith-woocommerce-wishlist.php',
              ),
             'yith-woocommerce-compare' => array(
                  'name' => esc_html__( 'YITH WooCommerce Compare', 'open-shop' ),
+                 'img' => 'icon-128x128.jpg',
                  'active_filename' => 'yith-woocommerce-compare/yith-woocommerce-compare.php',
              ),
             'lead-form-builder' => array(
                 'name' => esc_html__( 'Lead Form Builder', 'open-shop' ),
+                'img' => 'icon-128x128.png',
                 'active_filename' => 'lead-form-builder/lead-form-builder.php',
             ),
             'wp-popup-builder' => array(
                 'name' => esc_html__( 'WP Popup Builder – Popup Forms & Newsletter', 'open-shop' ),
+                'img' => 'icon-128x128.png',
                 'active_filename' => 'wp-popup-builder/wp-popup-builder.php',
             ), 
-            'one-click-demo-import' => array(
-                'name' => esc_html__( 'One Click Demo Import', 'open-shop' ),
-                'active_filename' => 'one-click-demo-import/one-click-demo-import.php',
-            ),
+
+            'themehunk-megamenu-plus' => array(
+                'name' => esc_html__( 'ThemeHunk Megamenu – Menu builder', 'open-shop' ),
+                'img' => 'icon-128x128.png',
+                'active_filename' => 'themehunk-megamenu-plus/themehunk-megamenu.php',
+            ), 
+            
         ) );
 
            // Useful plugins

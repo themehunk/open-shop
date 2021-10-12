@@ -15,9 +15,6 @@ get_template_part( 'lib/breadcrumbs/breadcrumbs');
 get_template_part( 'lib/page-meta-box/open-page-meta-box');
 //custom-style
 get_template_part( 'inc/open-shop-custom-style');
-//theme-option
-get_template_part( 'lib/theme-option/class-open-shop-admin-settings');
-get_template_part( 'lib/theme-option/theme-option-function');
 
 // customizer
 get_template_part('customizer/extend-customizer/class-open-shop-wp-customize-panel');
@@ -41,3 +38,6 @@ get_template_part('customizer/customizer');
 get_template_part( 'inc/woocommerce/woo-core');
 get_template_part( 'inc/woocommerce/woo-function');
 get_template_part('inc/woocommerce/woocommerce-ajax');
+
+//Th Option
+get_template_part( '/lib/th-option/th-option');
