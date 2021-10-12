@@ -20,142 +20,19 @@
     </p>
 
 
-    <h3><?php _e('Documentation','open-shop'); ?><!-- <php echo $theme_config['plugin_title']; ?> --></h3>
-    <p><?php _e('Our WordPress Theme is well Documented, you can go with our Documentation and learn to customize Open Shop.','open-shop'); ?></p>
-    <p><a target="_blank" href="https://themehunk.com/docs/open-shop/"><?php _e(' Go to docs','open-shop'); ?></a></p>
+    
 
 </div> 
 
 <!--- tab second -->
 <div class="theme_link">
-    <h3><?php _e('Import Demo Content','open-shop'); ?><!-- <php echo $theme_config['plugin_title']; ?> --></h3>
-    <p><?php _e('1. Install Hunk companion plugins', 'open-shop');?> </p>
 
-
-
-
-    <?php
-/**
- * Detect plugin. For use on Front End only.
- */
-include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
- 
-// check for plugin using plugin name
-if ( is_plugin_active( 'hunk-companion/hunk-companion.php' ) ) { ?>
-
-    <button class="button disabled button-primary "><?php _e('Plugin Activated','open-shop'); ?>
-</button> <?php 
-               }else { ?>
+    <h3><?php _e('Documentation','open-shop'); ?><!-- <php echo $theme_config['plugin_title']; ?> --></h3>
+    <p><?php _e('Our WordPress Theme is well Documented, you can go with our Documentation and learn to customize Open Shop.','open-shop'); ?></p>
+    <p><a target="_blank" href="https://themehunk.com/docs/open-shop/"><?php _e(' Go to docs','open-shop'); ?></a></p>
 
     
-    <button data-activated="Plugin Activated" data-msg="Activating Plugin" data-init="hunk-companion/hunk-companion.php" data-slug="hunk-companion" class="button install-now button hunk-companion">Install Now</button>
-
-
     
-<?php } ?>
-
-    <p><?php _e('2. Install One Click Demo Import plugins', 'open-shop');?> </p>
-
-    <?php
-/**
- * Detect plugin. For use on Front End only.
- */
-include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
- 
-// check for plugin using plugin name
-if ( is_plugin_active( 'one-click-demo-import/one-click-demo-import.php' ) ) { ?>
-
-<button class="button disabled button-primary "><?php _e('Plugin Activated','open-shop'); ?>
-</button> <?php 
-               }else { ?>
-
-    <button data-activated="Plugin Activated" data-msg="Activating Plugin" data-init="one-click-demo-import/one-click-demo-import.php" data-slug="one-click-demo-import" class="button install-now button one-click-demo-import">Install Now</button>
-                    
-<?php 
-} ?>
-
-    <p><?php _e('3. If above both plugin activated then one click demo importer button.', 'open-shop');?> </p>
-     <p>
-            <?php
-            // Sita Sites - Installed but Inactive.
-            // Sita Premium Sites - Inactive.
-            if ( file_exists( WP_PLUGIN_DIR . '/one-click-demo-import/one-click-demo-import.php' ) && is_plugin_inactive( 'one-click-demo-import/one-click-demo-import.php' )) {
-
-              $class       = 'button zta-sites-inactive';
-              $button_text = __( 'Activate Importer Plugin', 'open-shop' );
-              $data_slug   = 'one-click-demo-import';
-              $data_init   = '/one-click-demo-import/one-click-demo-import.php';
-
-          } elseif ( ! file_exists( WP_PLUGIN_DIR . '/one-click-demo-import/one-click-demo-import.php' ) ) {
-
-              $class       = 'button zta-sites-notinstalled';
-              $button_text = __( 'Install Importer Plugin', 'open-shop' );
-              $data_slug   = 'one-click-demo-import';
-              $data_init   = '/one-click-demo-import/one-click-demo-import.php';
-
-            }
-
-            else {
-              $class       = 'button active';
-              $button_text = __( 'Import Demo', 'open-shop' );
-              $link        = admin_url( 'themes.php?page=pt-one-click-demo-import' );
-            }
-
-            printf(
-              '<a class="ztabtn %1$s" %2$s %3$s %4$s> %5$s </a>',
-              esc_attr( $class ),
-              isset( $link ) ? 'href="' . esc_url( $link ) . '"' : '',
-              isset( $data_slug ) ? 'data-slug="' . esc_attr( $data_slug ) . '"' : '',
-              isset( $data_init ) ? 'data-init="' . esc_attr( $data_init ) . '"' : '',
-              esc_html( $button_text )
-            );
-
-        
-            ?> </p>
-
-
-
-            <p>
-            <?php
-            // Sita Sites - Installed but Inactive.
-            // Sita Premium Sites - Inactive.
-            if( file_exists( WP_PLUGIN_DIR . '/hunk-companion/hunk-companion.php' ) && is_plugin_inactive( 'hunk-companion/hunk-companion.php' )) {
-
-              $class       = 'button zta-sites-inactive';
-              $button_text = __( 'Activate Hunk Campanion Plugin', 'open-shop' );
-              $data_slug   = 'hunk-companion';
-              $data_init   = '/hunk-companion/hunk-companion.php';
-
-              // Sita Sites - Not Installed.
-              // Sita Premium Sites - Inactive.
-            } elseif ( ! file_exists( WP_PLUGIN_DIR . '/hunk-companion/hunk-companion.php' ) ) {
-
-              $class       = 'button zta-sites-notinstalled';
-              $button_text = __( 'Install Customizer Plugin', 'open-shop' );
-              $data_slug   = 'hunk-companion';
-              $data_init   = '/hunk-companion/hunk-companion.php';
-
-            }
-
-            else {
-              $class       = 'button active';
-              $button_text = __( 'Import Demo', 'open-shop' );
-              $link        = admin_url( 'themes.php?page=hunk-companion' );
-            }
-
-           /* printf(
-              '<a class="ztabtn %1$s" %2$s %3$s %4$s> %5$s </a>',
-              esc_attr( $class ),
-              isset( $link ) ? 'href="' . esc_url( $link ) . '"' : '',
-              isset( $data_slug ) ? 'data-slug="' . esc_attr( $data_slug ) . '"' : '',
-              isset( $data_init ) ? 'data-init="' . esc_attr( $data_init ) . '"' : '',
-              esc_html( $button_text )
-            );*/
-
-        
-            ?>
-
-                            </p>
 </div>
 <!--- tab third -->
 
