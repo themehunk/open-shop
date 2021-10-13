@@ -332,17 +332,21 @@ static public  function plugin_check_api(){
 
        }
 
-       else {
+       else { ?>
 
-         echo "Please Goto Recommnded Plugin Page To Install Plugin ";
+             <button class="button disabled button-primary"><?php _e('Import Demo','open-shop'); ?></button>
+
+
+        
+        <?php  
 
        }
+
+   
 
    }
 
 
-
-
  
 } // class end
-$boj = new open_shop_theme_option(); ?>
+$boj = new open_shop_theme_option();
