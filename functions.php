@@ -172,6 +172,29 @@ define( 'OPEN_SHOP_THEME_SETTINGS', 'open-shop-settings' );
                 'active_filename' => 'themehunk-megamenu-plus/themehunk-megamenu.php',
             )
         ) );
+
+
+        // Import Data Content plugins
+        add_theme_support( 'import-demo-content', array(
+             'hunk-companion' => array(
+                'name' => esc_html__( 'Hunk Companion', 'open-shop' ),
+                'img' => 'icon-128x128.png',
+                'active_filename' => 'hunk-companion/hunk-companion.php',
+            ),
+
+            'one-click-demo-import' => array(
+                'name' => esc_html__( 'One Click Demo Import', 'open-shop' ),
+                'img' => 'icon-128x128.png',
+                'active_filename' => 'one-click-demo-import/one-click-demo-import.php',
+            ), 
+            'woocommerce' => array(
+                'name' => esc_html__( 'Woocommerce', 'open-shop' ),
+                'img' => 'icon-128x128.png',
+                'active_filename' => 'woocommerce/woocommerce.php',
+            ),
+
+        ));
+
 	}
 endif;
 add_action( 'after_setup_theme', 'open_shop_setup' );

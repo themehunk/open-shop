@@ -2,7 +2,7 @@
     <div class="header">
         <h1><?php  echo $theme_header['welcome']; ?></h1>
         <div class="about-text"><?php echo $theme_header['welcome_desc']; ?></div>
-        <a target="_blank" href="<?php echo $theme_header['theme_brand_url']; ?>/?wp=novellite" class="themehunkhemes-badge wp-badge"><span><?php echo $theme_header['theme_brand']; ?></span></a>
+        <a target="_blank" href="<?php echo $theme_header['theme_brand_url']; ?>/?wp=openshop" class="themehunkhemes-badge wp-badge"><span><?php echo $theme_header['theme_brand']; ?></span></a>
     </div>
 </div>
 <div class="content-wrap">
@@ -11,10 +11,11 @@
 <div class="tab-left" >
 
         <div class="tab">
-            <button class="tablinks active" onclick="openTab(event, 'Welcome')"><?php _e('Welcome','novellite');?></button>
-            <button class="tablinks" onclick="openTab(event, 'Recommanded-Plugin')"><?php _e('Recommanded Plugin','novellite');?> </button>
-            <button class="tablinks" onclick="openTab(event, 'Free-Vs-Pro')"><?php _e('Free Vs Pro','novellite');?></button>
-            <button class="tablinks" onclick="openTab(event, 'Help')"><?php _e('Help','novellite');?></button>
+            <button class="tablinks active" onclick="openTab(event, 'Welcome')"><?php _e('Welcome','open-shop');?></button>
+            <button class="tablinks" onclick="openTab(event, 'Import-Demo-Content')"><?php _e('Import Demo Content','open-shop');?> </button>
+            <button class="tablinks" onclick="openTab(event, 'Recommanded-Plugin')"><?php _e('Recommanded Plugin','open-shop');?> </button>
+            <button class="tablinks" onclick="openTab(event, 'Free-Vs-Pro')"><?php _e('Free Vs Pro','open-shop');?></button>
+            <button class="tablinks" onclick="openTab(event, 'Help')"><?php _e('Help','open-shop');?></button>
         </div>
 
         <!-- Tab content -->
@@ -23,6 +24,27 @@
         <?php include('welcome.php' ); ?>
 
             </div> <!-- close twocolumn -->
+        </div>
+
+        <div id="Import-Demo-Content" class="tabcontent">
+
+            <div class="rp-two-column">
+
+                <div class="rcp theme_link th-row">
+                
+                <div class="title-plugin">
+                <h3><?php _e('Click Here To import Demo Content','top-store'); ?></h3>
+                 <?php echo $this->plugin_check_api(); ?>
+             </div>
+
+             </div>
+             
+                  
+                <?php echo $this->import_demo_content_setup_api(); ?>
+            
+            </div>
+
+        
         </div>
 
 
