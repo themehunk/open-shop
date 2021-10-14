@@ -19,18 +19,29 @@ function menu_tab() {
 * Enqueue scripts for admin page only: Theme info page
 */
 function admin_scripts( $hook ) {
-if ($hook === 'appearance_page_thunk_started'  ) {
-wp_enqueue_style( 'thunk-started-css', get_template_directory_uri() . '/lib/th-option/assets/css/started.css' );
-wp_enqueue_script('open-shop-admin-load', get_template_directory_uri() . '/lib/th-option/assets/js/th-options.js',array( 'jquery', 'updates' ),'1', true);
-}
+    if ($hook === 'appearance_page_thunk_started'  ) {
+    wp_enqueue_style( 'thunk-started-css', get_template_directory_uri() . '/lib/th-option/assets/css/started.css' );
+    wp_enqueue_script('open-shop-admin-load', get_template_directory_uri() . '/lib/th-option/assets/js/th-options.js',array( 'jquery', 'updates' ),'1', true);
+
+    $data = apply_filters(
+                    'th_option_localize_vars',
+                    array(
+                        'oneClickDemo' =>esc_url( admin_url( 'themes.php?page=pt-one-click-demo-import' )),
+
+                        )
+                );
+    wp_localize_script( 'open-shop-admin-load', 'THAdmin', $data); 
+
+    }
 }
 function tab_constant(){
     $theme_data = wp_get_theme();
     $tab_array = array();
     $tab_array['header'] = array('theme_brand' => __('ThemeHunk','open-shop'),
     'theme_brand_url' => esc_url($theme_data->get( 'AuthorURI' )),
-    'welcome'=>sprintf(esc_html__('Welcome to %1s - Version %2s', 'open-shop'), esc_html__($theme_data->get( 'Name' )), $theme_data->get( 'Version' ) ),
-    'welcome_desc' => esc_html__($theme_data->get( 'Name' ).' is beautiful one page shopping Woocommerce theme. This theme carries multiple powerful features which will help you in creating an amazing shopping site.You can design any type of shopping site and generate more profit.', 'open-shop' )
+    'welcome'=>sprintf(esc_html__('Welcome to %1s Woocommerce Theme', 'open-shop'), esc_html__($theme_data->get( 'Name' ))),
+    'welcome_desc' => esc_html__($theme_data->get( 'Name' ).' is beautiful one page shopping Woocommerce theme.', 'open-shop' ),
+    'v'=> 'Version '.$theme_data->get( 'Version' ),
     );
     return $tab_array;
 }
@@ -150,7 +161,7 @@ function _check_homepage_setup(){
 
              if ( is_plugin_active( $plugin_init ) ) {
                    $button_class = 'button disabled '.$slug;
-                   $button_txt = esc_html__( 'Plugin Activated', 'open-shop' );
+                   $button_txt = esc_html__( 'Activated', 'open-shop' );
                    $detail_link = $install_url = '';
 
         }
@@ -305,47 +316,6 @@ function _check_homepage_setup(){
 
     }
 }
-
-
-//plugin check install or not
-
-static public  function plugin_check_api(){
-       include_once( ABSPATH . 'wp-admin/includes/plugin-install.php' );
-       network_admin_url( 'plugin-install.php' );
-
-            // Sita Sites - Installed but Inactive.
-            // Sita Premium Sites - Inactive.
-            if ( is_plugin_active( 'one-click-demo-import/one-click-demo-import.php' ) && is_plugin_active( 'hunk-companion/hunk-companion.php' ) && is_plugin_active( 'woocommerce/woocommerce.php' ) )  {
-
-            $class       = 'button active';
-              $button_text = __( 'Import Demo', 'open-shop' );
-              $link        = admin_url( 'themes.php?page=pt-one-click-demo-import' );
-
-            printf(
-              '<a class="ztabtn %1$s" %2$s %3$s %4$s> %5$s </a>',
-              esc_attr( $class ),
-              isset( $link ) ? 'href="' . esc_url( $link ) . '"' : '',
-              isset( $data_slug ) ? 'data-slug="' . esc_attr( $data_slug ) . '"' : '',
-              isset( $data_init ) ? 'data-init="' . esc_attr( $data_init ) . '"' : '',
-              esc_html( $button_text )
-            );
-
-       }
-
-       else { ?>
-
-             <button class="button disabled button-primary"><?php _e('Import Demo','open-shop'); ?></button>
-
-
-        
-        <?php  
-
-       }
-
-   
-
-   }
-
 
  
 } // class end

@@ -139,12 +139,12 @@ define( 'OPEN_SHOP_THEME_SETTINGS', 'open-shop-settings' );
             'yith-woocommerce-wishlist' => array(
                  'name' => esc_html__( 'YITH WooCommerce Wishlist', 'open-shop' ),
                  'img' => 'icon-128x128.jpg',
-                 'active_filename' => 'yith-woocommerce-wishlist/yith-woocommerce-wishlist.php',
+                 'active_filename' => 'yith-woocommerce-wishlist/init.php',
              ),
             'yith-woocommerce-compare' => array(
                  'name' => esc_html__( 'YITH WooCommerce Compare', 'open-shop' ),
                  'img' => 'icon-128x128.jpg',
-                 'active_filename' => 'yith-woocommerce-compare/yith-woocommerce-compare.php',
+                 'active_filename' => 'yith-woocommerce-compare/init.php',
              ),
             'lead-form-builder' => array(
                 'name' => esc_html__( 'Lead Form Builder', 'open-shop' ),

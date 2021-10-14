@@ -6,7 +6,7 @@
             <p>
             <b><?php _e('12+ pre-made templates','open-shop'); ?> </b><br>
             <?php _e('You ll get more advanced features and functionalities with Open Shop pro. Switch to pro version and enjoy creating online store.','open-shop'); ?> </p>
-                <center><a class="button button-primary" target="_blank" href="https://themehunk.com/product/open-shop-pro/"><?php _e('Upgrade','open-shop'); ?> </a></center>
+                <center><a class="button ztabtn" target="_blank" href="https://themehunk.com/product/open-shop-pro/"><?php _e('UPGRADE','open-shop'); ?> </a></center>
             </div>
             <hr>
             <div class="section">
