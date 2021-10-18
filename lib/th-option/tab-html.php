@@ -24,6 +24,7 @@
             <a class="tablinks" onclick="openTab(event, 'Recommanded-Plugin')"><?php _e('Recommanded Plugin','open-shop');?> </a>
             <a class="tablinks" onclick="openTab(event, 'Free-Vs-Pro')"><?php _e('Free Vs Pro','open-shop');?></a>
             <a class="tablinks" onclick="openTab(event, 'Help')"><?php _e('Help','open-shop');?></a>
+            <a class="tablinks" onclick="openTab(event, 'Child-Theme')"><?php _e('Chid Theme','open-shop');?></a>
 
         </div>
     </div>
@@ -85,6 +86,14 @@
     <div id="Help" class="tabcontent">
         <div class="rp-two-column">
                     <?php include('need-help.php' ); ?>
+
+        </div>
+    </div>
+
+
+    <div id="Child-Theme" class="tabcontent">
+        <div class="rp-two-column">
+                    <?php include('child-theme.php' ); ?>
 
         </div>
     </div>

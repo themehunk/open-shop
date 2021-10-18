@@ -261,10 +261,14 @@ display: flex;
     box-shadow: 0 0 0 0 #3b5998;
     transition: .3s ease;
     border-radius: 2px;
-    width: 50%;
+    width: 52%;
 }
 .facebook-gropup:hover{
 color:#fff;
+}
+
+a.ztabtn.button.download-child-theme{
+    cursor: pointer;
 }
 
 /** customizer links **/
