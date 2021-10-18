@@ -26,7 +26,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
 = 1.3.6 =
 * child theme added.
-* option panel style issue fixed
+* option panel style issue fixed.
 
 = 1.3.5 =
 * upgrade button link fix.
