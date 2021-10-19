@@ -2,8 +2,18 @@
 /*************************************/
 /***** Started theme css **/
 
+.wrap-th {
+    margin: 10px 20px 0 2px;
+}
+
+.about-wrap-th {
+    position: relative;
+    font-size: 15px;
+}
+
 .th-option-area{
-   margin: 25px 20px 50px;
+   /*margin: 25px 20px 50px;*/
+    margin: 25px 20px 50px 10px;
     display: flex;
     flex-direction: column;
     position: relative;

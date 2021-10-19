@@ -1,4 +1,4 @@
-<div class="wrap theme_info_wrapper">
+<div class="wrap-th about-wrap-th theme_info_wrapper">
     <div class="header">
 
 <!-- themehunkhemes-badge wp-badge
@@ -6,7 +6,7 @@
         <div class="th-option-top-hdr">
             <div class="col-1">
                 <div class="logo-img">
-                <a target="_blank" href="<?php echo $theme_header['theme_brand_url']; ?>/?wp=openshop" class=""> <span><img src="http://localhost/wp572/wp-content/themes/open-shop/lib/th-option/assets/images/icon.png"/><?php echo $theme_header['theme_brand']; ?></span></a>
+                <a target="_blank" href="<?php echo $theme_header['theme_brand_url']; ?>/?wp=openshop" class=""> <span><img src="<?php echo get_template_directory_uri(); ?>/lib/th-option/assets/images/icon.png"/><?php echo $theme_header['theme_brand']; ?></span></a>
             </div>
             </div>
             <div class="col-2">
@@ -24,7 +24,6 @@
             <a class="tablinks" onclick="openTab(event, 'Recommanded-Plugin')"><?php _e('Recommanded Plugin','open-shop');?> </a>
             <a class="tablinks" onclick="openTab(event, 'Free-Vs-Pro')"><?php _e('Free Vs Pro','open-shop');?></a>
             <a class="tablinks" onclick="openTab(event, 'Help')"><?php _e('Help','open-shop');?></a>
-            <a class="tablinks" onclick="openTab(event, 'Child-Theme')"><?php _e('Chid Theme','open-shop');?></a>
 
         </div>
     </div>
@@ -110,4 +109,5 @@
 </div>
 
 
+</div>
 </div>
