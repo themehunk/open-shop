@@ -6,12 +6,20 @@
     </p>
 </div>
 
+<div class="theme_link">
+    <h3><?php _e('Create a child theme','open-shop'); ?><!-- <php echo $theme_config['plugin_title']; ?> --></h3>
+    <p><?php _e("Before modifying theme core files. You should create child theme to make those changes update proof. Please follow this link to create child theme.",'open-shop'); ?></p>
+    <p>
+    <a target="_blank" href="https://themehunk.com/docs/how-to-create-a-child-theme-using-themehunk-themes/">
+        <?php _e('Create Child Theme','open-shop'); ?></a>
+    </p>
+</div>
 
 
 <div class="theme_link">
 
     <h3><?php _e('Documentation','open-shop'); ?><!-- <php echo $theme_config['plugin_title']; ?> --></h3>
-    <p><?php _e('Our WordPress Theme is well Documented, you can go with our Documentation and learn to customize Open Shop.','open-shop'); ?></p>
+    <p><?php _e('Our WordPress Theme is well documented, you can go with our documentation and learn to customize Open Shop.','open-shop'); ?></p>
     <p><a target="_blank" href="https://themehunk.com/docs/open-shop/"><?php _e(' Go to docs','open-shop'); ?></a></p>
     
 </div>

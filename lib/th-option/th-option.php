@@ -1,4 +1,5 @@
 <?php
+include_once( ABSPATH . 'wp-admin/includes/plugin-install.php' );
 class open_shop_theme_option{
 function __construct(){
 add_action( 'admin_enqueue_scripts', array($this,'admin_scripts'));
@@ -39,8 +40,8 @@ function tab_constant(){
     $tab_array = array();
     $tab_array['header'] = array('theme_brand' => __('ThemeHunk','open-shop'),
     'theme_brand_url' => esc_url($theme_data->get( 'AuthorURI' )),
-    'welcome'=>sprintf(esc_html__('Welcome to %1s Woocommerce Theme', 'open-shop'), esc_html__($theme_data->get( 'Name' ))),
-    'welcome_desc' => esc_html__($theme_data->get( 'Name' ).' is beautiful one page shopping Woocommerce theme.', 'open-shop' ),
+    'welcome'=>sprintf(esc_html__('Welcome To %1s Woocommerce Theme', 'open-shop'), esc_html__($theme_data->get( 'Name' ))),
+    'welcome_desc' => esc_html__($theme_data->get( 'Name' ).' is a fast and responsive shopping WordPress theme.', 'open-shop' ),
     'v'=> 'Version '.$theme_data->get( 'Version' ),
     );
     return $tab_array;
@@ -130,41 +131,45 @@ function _check_homepage_setup(){
       );
 
         }
-        
+		
+		
+	
+	function plugin_install_button($plugin){
+            $button = '<div class="rcp theme_link th-row">';
+            $button .= ' <div class="th-column"><img src="'.esc_url( $plugin['thumb'] ).'" /> </div>';
+            $button .= '<div class="th-column">';
 
+            $button .= '<div class="title-plugin">
+            <h4>'.esc_html( $plugin['plugin_name'] ). ' </h4><a class="plugin-detail thickbox open-plugin-details-modal" href="'.esc_url( $plugin['detail_link'] ).'">'.esc_html__( 'Details & Version', 'open-shop' ).'</a>
+            </div>';
+             $button .='<button data-activated="Activated" data-msg="Activating" data-init="'.esc_attr($plugin['plugin_init']).'" data-slug="'.esc_attr( $plugin['slug'] ).'" class="button '.esc_attr( $plugin['button_class'] ).'">'.esc_html($plugin['button_txt']).'</button>';
+            $button .= '</div></div>';
 
+            echo $button;
+}	
+		
+  
+  
 /**
  * Include Welcome page content
  */
-       static public  function plugin_setup_api(){
-       include_once( ABSPATH . 'wp-admin/includes/plugin-install.php' );
-       network_admin_url( 'plugin-install.php' );
-
-
-
-       $recommend_plugins = get_theme_support( 'recommend-plugins' );
-
+ public  function plugin_install($rplugins = 'recommend-plugins'){
+    $recommend_plugins = get_theme_support( $rplugins );
 
        if ( is_array( $recommend_plugins ) && isset( $recommend_plugins[0] ) ){
-        $plugin_add ="";
+        $pluginArr =array();
         foreach($recommend_plugins[0] as $slug=>$plugin){
-                   
-                       $thumb = "https://ps.w.org/". $slug."/assets/".$plugin['img'];
-                       $plugin_init = $plugin['active_filename'];
-                       $plugin_name = $plugin['name'];
 
-
+            $plugin_init = $plugin['active_filename'];
             $status = is_dir( WP_PLUGIN_DIR . '/' . $slug );
 
-            
             $button_class = 'install-now button '.$slug;
 
              if ( is_plugin_active( $plugin_init ) ) {
                    $button_class = 'button disabled '.$slug;
                    $button_txt = esc_html__( 'Activated', 'open-shop' );
                    $detail_link = $install_url = '';
-
-        }
+                }
 
             if ( ! is_plugin_active( $plugin_init ) ){
                     $button_txt = esc_html__( 'Install Now', 'open-shop' );
@@ -191,10 +196,7 @@ function _check_homepage_setup(){
                         $button_class = 'activate-now button-primary '.$slug;
                         $button_txt = esc_html__( 'Activate Now', 'open-shop' );
                     }
-                        
-
                 }
-
                 $detail_link = add_query_arg(
                         array(
                             'tab' => 'plugin-information',
@@ -202,120 +204,23 @@ function _check_homepage_setup(){
                             'TB_iframe' => 'true',
                             'width' => '772',
                             'height' => '500',
-
                         ),
                         network_admin_url( 'plugin-install.php' )
                     );
 
+                    $pluginArr['plugin_name'] =  $plugin['name'];
+                    $pluginArr['slug']= $slug;
+                    $pluginArr['thumb']= "https://ps.w.org/". $slug."/assets/".$plugin['img'];
+                    $pluginArr['plugin_init']= $plugin_init;
+                    $pluginArr['detail_link']= $detail_link;
+                    $pluginArr['button_txt']= $button_txt;
+                    $pluginArr['button_class']= $button_class;
 
-                $plugin_add .= '<div class="rcp theme_link th-row">';
-                $plugin_add .= ' <div class="th-column"><img src="'.esc_url( $thumb ).'" /> </div>';
-                 $plugin_add .= '<div class="th-column">';
-
-                $plugin_add .= '<div class="title-plugin">
-                <h4>'.esc_html( $plugin_name ). ' </h4><a class="plugin-detail thickbox open-plugin-details-modal" href="'.esc_url( $detail_link ).'">'.esc_html__( 'Details & Version', 'open-shop' ).'</a>
-                </div>';
-                 $plugin_add .='<button data-activated="Plugin Activated" data-msg="Activating Plugin" data-init="'.esc_attr($plugin_init).'" data-slug="'.esc_attr( $slug ).'" class="button '.esc_attr( $button_class ).'">'.esc_html($button_txt).'</button>';
-
-                $plugin_add .= '</div></div>';
+                   $this->plugin_install_button($pluginArr);
         }
-    echo  $plugin_add;
-
-    }
+    } // plugin check
 }
 
-
-
-/**
- * Include import demo content plugin required page content
- */
-       static public  function import_demo_content_setup_api(){
-       include_once( ABSPATH . 'wp-admin/includes/plugin-install.php' );
-       network_admin_url( 'plugin-install.php' );
-
-
-
-       $import_demo_content = get_theme_support( 'import-demo-content' );
-
-
-       if ( is_array( $import_demo_content ) && isset( $import_demo_content[0] ) ){
-        $plugin_add ="";
-        foreach($import_demo_content[0] as $slug=>$plugin){
-                   
-                       $thumb = "https://ps.w.org/". $slug."/assets/".$plugin['img'];
-                       $plugin_init = $plugin['active_filename'];
-                       $plugin_name = $plugin['name'];
-
-
-            $status = is_dir( WP_PLUGIN_DIR . '/' . $slug );
-
-            
-            $button_class = 'install-now button '.$slug;
-
-             if ( is_plugin_active( $plugin_init ) ) {
-                   $button_class = 'button disabled '.$slug;
-                   $button_txt = esc_html__( 'Plugin Activated', 'open-shop' );
-                   $detail_link = $install_url = '';
-
-        }
-
-            if ( ! is_plugin_active( $plugin_init ) ){
-                    $button_txt = esc_html__( 'Install Now', 'open-shop' );
-                    if ( ! $status ) {
-                        $install_url = wp_nonce_url(
-                            add_query_arg(
-                                array(
-                                    'action' => 'install-plugin',
-                                    'plugin' => $slug
-                                ),
-                                network_admin_url( 'update.php' )
-                            ),
-                            'install-plugin_'.$slug
-                        );
-
-                    } else {
-                        $install_url = add_query_arg(array(
-                            'action' => 'activate',
-                            'plugin' => rawurlencode( $plugin_init ),
-                            'plugin_status' => 'all',
-                            'paged' => '1',
-                            '_wpnonce' => wp_create_nonce('activate-plugin_' . $plugin_init ),
-                        ), network_admin_url('plugins.php'));
-                        $button_class = 'activate-now button-primary '.$slug;
-                        $button_txt = esc_html__( 'Activate Now', 'open-shop' );
-                    }
-                        
-
-                }
-
-                $detail_link = add_query_arg(
-                        array(
-                            'tab' => 'plugin-information',
-                            'plugin' => $slug,
-                            'TB_iframe' => 'true',
-                            'width' => '772',
-                            'height' => '500',
-
-                        ),
-                        network_admin_url( 'plugin-install.php' )
-                    );
-
-
-                $plugin_add .= '<div class="rcp theme_link th-row">';
-                $plugin_add .= ' <div class="th-column"><img src="'.esc_url( $thumb ).'" /> </div>';
-                 $plugin_add .= '<div class="th-column">';
-
-                $plugin_add .= '<div class="title-plugin">
-                <h4>'.esc_html( $plugin_name ). ' </h4><a class="plugin-detail thickbox open-plugin-details-modal" href="'.esc_url( $detail_link ).'">'.esc_html__( 'Details & Version', 'open-shop' ).'</a>
-                </div>';
-                 $plugin_add .='<button data-activated="Plugin Activated" data-msg="Activating Plugin" data-init="'.esc_attr($plugin_init).'" data-slug="'.esc_attr( $slug ).'" class="button '.esc_attr( $button_class ).'">'.esc_html($button_txt).'</button>';
-
-                $plugin_add .= '</div></div>';
-        }
-    echo  $plugin_add;
-
-    }
-}
 
  
 } // class end

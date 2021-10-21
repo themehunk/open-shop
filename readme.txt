@@ -23,9 +23,9 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
 == Changelog ==
 
-
 = 1.3.6 =
-* child theme added.
+* Th option panel updated.
+* child theme tab removed.
 * option panel style issue fixed.
 
 = 1.3.5 =
@@ -167,8 +167,10 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 Initial release
 
 == Upgrade Notice ==
-= 1.3.3 =
-* Th advance product search plugin installation message style improved.
+= 1.3.6 =
+* Th option panel updated.
+* child theme tab removed.
+* option panel style issue fixed.
 
 == Resources ==
  
