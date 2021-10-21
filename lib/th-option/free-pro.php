@@ -8,6 +8,20 @@
                      <th class="status" align="center"><?php _e('Open Shop Pro','open-shop'); ?> </th>
                   </tr>
 
+
+                  <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4><?php _e('Pre Made Template','open-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status success"><span class="dashicon dashicons" size="30"></span>
+                     <span class="info"><?php _e('3','open-shop'); ?> </span></td>
+                     <td class="status success"><span class="dashicon dashicons" size="30"></span>
+                     <span class="info"><a href="https://themehunk.com/product/open-shop-ecommerce-theme/#tabfix" target="_blank"><?php _e('9','open-shop'); ?></a></span></td>
+                  </tr>
+
+
                   <tr class="feature-row">
                      <td class="title">
                         <div class="title-wrap">
