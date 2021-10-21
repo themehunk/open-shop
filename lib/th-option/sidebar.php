@@ -1,10 +1,10 @@
 <div class="sidebar-section">
             <div class="section">
             <h3 class="hndle ui-sortable-handle">
-                <span><?php _e('OpenShop Pro WordPress Theme','open-shop'); ?> </span>
+                <span><?php _e('Open Shop Pro WordPress Theme','open-shop'); ?> </span>
             </h3>
             <p>
-            <b><?php _e('12+ pre-made templates','open-shop'); ?> </b><br>
+            <b><?php _e('12+ pre-made premium templates','open-shop'); ?> </b><br>
             <?php _e('You ll get more advanced features and functionalities with Open Shop pro. Switch to pro version and enjoy creating online store.','open-shop'); ?> </p>
                 <center><a class="button ztabtn" target="_blank" href="https://themehunk.com/product/open-shop-pro/"><?php _e('UPGRADE','open-shop'); ?> </a></center>
             </div>
@@ -12,7 +12,7 @@
             <div class="section">
                 <h3><?php _e('Leave us a review','open-shop'); ?></h3>
                 <p><?php _e('We would love to hear your feedback.','open-shop'); ?> </p>
-                 <a href="https://wordpress.org/support/theme/open-shop/reviews/" target="_blank" class="sidebar-link"><?php _e('Submit review','open-shop'); ?></a>
+                 <a href="https://wordpress.org/support/theme/open-shop/reviews/?rate=5#new-post" target="_blank" class="sidebar-link"><?php _e('Submit review','open-shop'); ?></a>
 
             </div>
             <hr>
@@ -20,7 +20,7 @@
             <div class="section">
                 <h3><?php _e('Video Tutorials','open-shop'); ?></h3>
                 <p><?php _e('Want a guide? We have video tutorials to walk you through getting started.','open-shop'); ?> </p>
-                <a href="https://www.youtube.com/watch?v=mSCwnffrOQM" target="_blank" class="sidebar-link"><?php _e('Watch Videos','open-shop'); ?></a>
+                <a href="https://www.youtube.com/watch?v=JE7o0DkAYeM&list=PLe42R8TvpeK3ouP1WFa_w_iOLaFDyW69W" target="_blank" class="sidebar-link"><?php _e('Watch Videos','open-shop'); ?></a>
             </div>
             <hr>
 

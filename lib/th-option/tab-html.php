@@ -5,8 +5,8 @@
  --><div class="th-option-area">
         <div class="th-option-top-hdr">
             <div class="col-1">
-                <div class="logo-img">
-                <a target="_blank" href="<?php echo $theme_header['theme_brand_url']; ?>/?wp=openshop" class=""> <span><img src="<?php echo get_template_directory_uri(); ?>/lib/th-option/assets/images/icon.png"/><?php echo $theme_header['theme_brand']; ?></span></a>
+               <div class="logo-img">
+                <a target="_blank" href="<?php echo esc_url($theme_header['theme_brand_url']); ?>/?wp=openshop" class=""> <span class="logo-image"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/lib/th-option/assets/images/icon.png"/><?php echo $theme_header['theme_brand']; ?></span></a>
             </div>
             </div>
             <div class="col-2">
@@ -15,7 +15,7 @@
                     <span><?php echo $theme_header['welcome_desc']; ?></span>
                 </div>
                 <span class="version"><?php echo $theme_header['v']; ?></span>
-                <span><?php echo _e("FREE THEME"); ?></span>
+                <span><?php echo _e("FREE THEME","open-shop"); ?></span>
             </div>
         </div>
         <div class="th-option-bottom-hdr">
@@ -52,15 +52,15 @@
                 <div class="rcp theme_link th-row">
                 
                 <div class="title-plugin">
-                <h3><?php _e('Click Here To import Demo Content','top-store'); ?></h3>
-                <p> <?php _e("You need to Install required plugins like- Hunk Companion, WooCommerce and One click demo import plugin. After installing required plugins Import Butoon will activate."); ?></p>
+                <h3><?php _e('Click Here To Import Demo Content','open-shop'); ?></h3>
+                <p> <?php _e("You need to Install required plugins like- Hunk Companion, Woocommerce and One click demo import plugin. After installing required plugins Import Button will activate.","open-shop"); ?></p>
               <a class="button disabled importdemo"><?php _e( 'Import Demo', 'open-shop' ); ?></a>
              </div>
 
              </div>
              
                   
-                <?php echo $this->import_demo_content_setup_api(); ?>
+                <?php $this->plugin_install('import-demo-content'); ?>
             
             </div>
 
@@ -70,7 +70,7 @@
 
         <div id="Recommanded-Plugin" class="tabcontent">
             <div class="rp-two-column">
-            <?php echo $this->plugin_setup_api(); ?>
+            <?php $this->plugin_install(); ?>
             </div>
         </div>
 
@@ -89,13 +89,6 @@
         </div>
     </div>
 
-
-    <div id="Child-Theme" class="tabcontent">
-        <div class="rp-two-column">
-                    <?php include('child-theme.php' ); ?>
-
-        </div>
-    </div>
 
 
 </div> <!-- tab div close -->
