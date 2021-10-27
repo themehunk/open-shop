@@ -153,7 +153,7 @@ function _check_homepage_setup(){
 /**
  * Include Welcome page content
  */
- public  function plugin_install($rplugins = 'plugins'){
+ public  function plugin_install($rplugins = 'recommend-plugins'){
     $recommend_plugins = get_theme_support( $rplugins );
 
        if ( is_array( $recommend_plugins ) && isset( $recommend_plugins[0] ) ){
