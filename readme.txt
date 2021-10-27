@@ -23,6 +23,9 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
 == Changelog ==
 
+= 1.3.7 =
+* Th advance product search plugin url issue fixed.
+
 = 1.3.6 =
 * Th option panel updated.
 * child theme tab removed.
