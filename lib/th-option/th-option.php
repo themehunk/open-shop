@@ -1,6 +1,6 @@
 <?php
 include_once( ABSPATH . 'wp-admin/includes/plugin-install.php' );
-class open_shop_theme_option{
+class Open_Shop_theme_option{
 function __construct(){
 add_action( 'admin_enqueue_scripts', array($this,'admin_scripts'));
 add_action('admin_menu', array($this,'menu_tab'));
@@ -8,10 +8,11 @@ add_action('admin_menu', array($this,'menu_tab'));
     // AJAX.
     add_action( 'wp_ajax_th_activeplugin',array($this,'th_activeplugin') );
     add_action( 'wp_ajax_default_home',array($this, 'default_home') );
+    add_action( 'admin_notices', array($this, 'child_theme_admin_notice') );
 }
 function menu_tab() {
     $menu_title = esc_html__('Open Shop Options', 'open-shop');
-    add_theme_page( esc_html__( 'open shop', 'open-shop' ), $menu_title, 'edit_theme_options', 'thunk_started',array($this,'tab_page'));
+    add_theme_page( esc_html__( 'Open Shop', 'open-shop' ), $menu_title, 'edit_theme_options', 'thunk_started',array($this,'tab_page'));
 
 }
 
@@ -20,11 +21,11 @@ function menu_tab() {
 * Enqueue scripts for admin page only: Theme info page
 */
 function admin_scripts( $hook ) {
-    if ($hook === 'appearance_page_thunk_started'  ) {
-    wp_enqueue_style( 'thunk-started-css', get_template_directory_uri() . '/lib/th-option/assets/css/started.css' );
-    wp_enqueue_script('open-shop-admin-load', get_template_directory_uri() . '/lib/th-option/assets/js/th-options.js',array( 'jquery', 'updates' ),'1', true);
+if ($hook === 'appearance_page_thunk_started'  ) {
+wp_enqueue_style( 'thunk-started-css', get_template_directory_uri() . '/lib/th-option/assets/css/started.css' );
+wp_enqueue_script('open-shop-admin-load', get_template_directory_uri() . '/lib/th-option/assets/js/th-options.js',array( 'jquery', 'updates' ),'1', true);
 
-    $data = apply_filters(
+$data = apply_filters(
                     'th_option_localize_vars',
                     array(
                         'oneClickDemo' =>esc_url( admin_url( 'themes.php?page=pt-one-click-demo-import' )),
@@ -33,16 +34,17 @@ function admin_scripts( $hook ) {
                 );
     wp_localize_script( 'open-shop-admin-load', 'THAdmin', $data); 
 
-    }
+
+}
 }
 function tab_constant(){
     $theme_data = wp_get_theme();
     $tab_array = array();
     $tab_array['header'] = array('theme_brand' => __('ThemeHunk','open-shop'),
     'theme_brand_url' => esc_url($theme_data->get( 'AuthorURI' )),
-    'welcome'=>sprintf(esc_html__('Welcome To %1s Woocommerce Theme', 'open-shop'), esc_html__($theme_data->get( 'Name' ))),
+    'welcome'=>sprintf(esc_html__('Welcome To %1s Theme', 'open-shop'), esc_html__($theme_data->get( 'Name' )), $theme_data->get( 'Version' ) ),
     'welcome_desc' => esc_html__($theme_data->get( 'Name' ).' is a fast and responsive shopping WordPress theme.', 'open-shop' ),
-    'v'=> 'Version '.$theme_data->get( 'Version' ),
+    'v'=> 'Version '.$theme_data->get( 'Version' )
     );
     return $tab_array;
 }
@@ -132,9 +134,9 @@ function _check_homepage_setup(){
 
         }
 		
-		
-	
-	function plugin_install_button($plugin){
+
+
+function plugin_install_button($plugin){
             $button = '<div class="rcp theme_link th-row">';
             $button .= ' <div class="th-column"><img src="'.esc_url( $plugin['thumb'] ).'" /> </div>';
             $button .= '<div class="th-column">';
@@ -146,10 +148,11 @@ function _check_homepage_setup(){
             $button .= '</div></div>';
 
             echo $button;
-}	
-		
-  
-  
+}
+
+
+
+
 /**
  * Include Welcome page content
  */
@@ -221,7 +224,14 @@ function _check_homepage_setup(){
     } // plugin check
 }
 
-
- 
+	public function child_theme_admin_notice() {
+    ?>
+    <div class="notice notice-success is-dismissible child-theme-notice">
+        <p><?php _e( "We highly recommended to use child theme. Child theme inherit the style and functionality of parent theme, you can easily update the parent theme without losing its Customization. That's why we recommended to use child theme to make your site update proof.", 'open-shop' ); ?></p>
+        <a href="<?php echo esc_url('https://themehunk.com/child-theme/#open-shop-child'); ?>" class="button" target="_blank"><?php _e('Get child theme Now','open-shop') ?></a>
+    </div>
+    <?php
+}	
+	
 } // class end
-$boj = new open_shop_theme_option();
+$boj = new Open_Shop_theme_option(); ?>

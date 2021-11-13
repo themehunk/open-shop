@@ -8,20 +8,6 @@
                      <th class="status" align="center"><?php _e('Open Shop Pro','open-shop'); ?> </th>
                   </tr>
 
-
-                  <tr class="feature-row">
-                     <td class="title">
-                        <div class="title-wrap">
-                           <h4><?php _e('Pre Made Template','open-shop'); ?> </h4>
-                        </div>
-                     </td>
-                     <td class="status success"><span class="dashicon dashicons" size="30"></span>
-                     <span class="info"><?php _e('3','open-shop'); ?> </span></td>
-                     <td class="status success"><span class="dashicon dashicons" size="30"></span>
-                     <span class="info"><a href="https://themehunk.com/product/open-shop-ecommerce-theme/#tabfix" target="_blank"><?php _e('12','open-shop'); ?></a></span></td>
-                  </tr>
-
-
                   <tr class="feature-row">
                      <td class="title">
                         <div class="title-wrap">
@@ -32,8 +18,7 @@
                      <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
                   </tr>
 
-                  
-                  
+
                   <tr class="feature-row">
                      <td class="title">
                         <div class="title-wrap">
@@ -44,33 +29,46 @@
                      <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span><span class="info"><?php _e('(Multiple Possibilities)','open-shop'); ?> </span></td>
                   </tr>
 
-                   <tr class="feature-row">
+
+                  
+
+
+
+                  <tr class="feature-row">
                      <td class="title">
                         <div class="title-wrap">
                            <h4><?php _e('Footer Layout','open-shop'); ?> </h4>
                         </div>
                      </td>
-                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
-                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+
                   </tr>
+
+
                   <tr class="feature-row">
                      <td class="title">
                         <div class="title-wrap">
-                           <h4> <?php _e('Full Color & Background Control','open-shop'); ?> </h4>
+                           <h4><?php _e('Full Color & Background Control','open-shop'); ?> </h4>
                         </div>
                      </td>
                      <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span><span class="info"><?php _e('(Basic)','open-shop'); ?> </span></td>
                      <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span><span class="info"><?php _e('(Advanced)','open-shop'); ?> </span></td>
                   </tr>
+
+
                   <tr class="feature-row">
                      <td class="title">
                         <div class="title-wrap">
-                           <h4> <?php _e('Top Slider Section','open-shop'); ?> </h4>
+                           <h4><?php _e('Top Slider Section','open-shop'); ?> </h4>
                         </div>
                      </td>
                      <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span><span class="info"><?php _e('(Two Layouts)','open-shop'); ?> </span></td>
                      <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span><span class="info"><?php _e('(Five Layouts)','open-shop'); ?> </span></td>
                   </tr>
+
+
                   <tr class="feature-row">
                      <td class="title">
                         <div class="title-wrap">
@@ -80,29 +78,52 @@
                      <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
                      <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
                   </tr>
+
+
+
                   <tr class="feature-row">
                      <td class="title">
                         <div class="title-wrap">
-                           <h4> <?php _e('Tabbed Product Carousel Section','open-shop'); ?> </h4>
+                           <h4><?php _e('Tabbed Product Carousel Section','open-shop'); ?> </h4>
                         </div>
                      </td>
-                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
-                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+
                   </tr>
-                 
+
+
+                  <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4><?php _e('Woo Category Section','open-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        <span class="info"><?php _e('(One Layouts)','open-shop'); ?> </span></td>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        <span class="info"><?php _e('(Three Layouts)','open-shop'); ?> </span></td>
+
+                  </tr>
+
+
                    <tr class="feature-row">
                      <td class="title">
                         <div class="title-wrap">
-                           <h4><?php _e('Post slider widget','open-shop'); ?> </h4>
+                           <h4><?php _e('Product List Carousel Section','open-shop'); ?> </h4>
                         </div>
                      </td>
-                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
-                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        </td>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                     </td>
+
                   </tr>
 
 
-
-                 
 
                   <tr class="feature-row">
                      <td class="title">
@@ -110,72 +131,78 @@
                            <h4><?php _e('Support','open-shop'); ?> </h4>
                         </div>
                      </td>
-                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span><span class="info"><?php _e('(Basic)','open-shop'); ?> </span></td>
-                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span><span class="info"><?php _e('(Priority)','open-shop'); ?> </span></td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        <span class="info"><?php _e('(Basic)','open-shop'); ?> </span></td>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                     <span class="info"><?php _e('(Priority)','open-shop'); ?> </span></td>
+
+                  </tr>
+
+
+
+
+
+
+
+
+                  <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4> <?php _e('Exclude Category','open-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status error"><span class="dashicon dashicons dashicons-no-alt" size="30"></span></td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
+                  </tr>
+
+
+                   <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4> <?php _e('Off Canvas Sidebar','open-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status error"><span class="dashicon dashicons dashicons-no-alt" size="30"></span></td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
                   </tr>
 
 
                   <tr class="feature-row">
                      <td class="title">
                         <div class="title-wrap">
-                           <h4><?php _e('Exclude Category','open-shop'); ?> </h4>
+                           <h4> <?php _e('Big Featured Product Section','open-shop'); ?> </h4>
                         </div>
                      </td>
                      <td class="status error"><span class="dashicon dashicons dashicons-no-alt" size="30"></span></td>
                      <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
                   </tr>
 
-                   <tr class="feature-row">
+
+                  <tr class="feature-row">
                      <td class="title">
                         <div class="title-wrap">
-                           <h4><?php _e('Off Canvas Sidebar','open-shop'); ?> </h4>
+                           <h4> <?php _e('Brand Section','open-shop'); ?> </h4>
                         </div>
                      </td>
                      <td class="status error"><span class="dashicon dashicons dashicons-no-alt" size="30"></span></td>
                      <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
                   </tr>
+
+
+
+
 
                   
 
-                  
+
+                 
 
 
                   <tr class="feature-row">
                      <td class="title">
                         <div class="title-wrap">
-                           <h4><?php _e('Big Featured Product Section','open-shop'); ?> </h4>
-                        </div>
-                     </td>
-                     <td class="status error"><span class="dashicon dashicons dashicons-no-alt" size="30"></span></td>
-                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
-                  </tr>
-
-
-                   <tr class="feature-row">
-                     <td class="title">
-                        <div class="title-wrap">
-                           <h4><?php _e('Brand Section','open-shop'); ?> </h4>
-                        </div>
-                     </td>
-                     <td class="status error"><span class="dashicon dashicons dashicons-no-alt" size="30"></span></td>
-                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
-                  </tr>
-
-
-                   <tr class="feature-row">
-                     <td class="title">
-                        <div class="title-wrap">
-                           <h4><?php _e('Page Templates','open-shop'); ?> </h4>
-                        </div>
-                     </td>
-                     <td class="status error"><span class="dashicon dashicons dashicons-no-alt" size="30"></span></td>
-                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span><span class="info"><?php _e('(Contact page Template, About us Template FAQs Page Template)','open-shop'); ?></span> </td>
-                  </tr>
-
-                  <tr class="feature-row">
-                     <td class="title">
-                        <div class="title-wrap">
-                           <h4><?php _e('Product List Slider Widget','open-shop'); ?> </h4>
+                           <h4> <?php _e('Single Product Carousel','open-shop'); ?> </h4>
                         </div>
                      </td>
                      <td class="status error"><span class="dashicon dashicons dashicons-no-alt" size="30"></span></td>
@@ -186,7 +213,7 @@
                   <tr class="feature-row">
                      <td class="title">
                         <div class="title-wrap">
-                           <h4><?php _e('Product Slider Widget','open-shop'); ?> </h4>
+                           <h4> <?php _e('Brand Section','open-shop'); ?> </h4>
                         </div>
                      </td>
                      <td class="status error"><span class="dashicon dashicons dashicons-no-alt" size="30"></span></td>
@@ -196,26 +223,45 @@
                   <tr class="feature-row">
                      <td class="title">
                         <div class="title-wrap">
-                           <h4><?php _e('Single Category Slider Widget ','open-shop'); ?> </h4>
+                           <h4> <?php _e('Product List Slider Widget','open-shop'); ?> </h4>
                         </div>
                      </td>
                      <td class="status error"><span class="dashicon dashicons dashicons-no-alt" size="30"></span></td>
                      <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
                   </tr>
+
 
                   <tr class="feature-row">
                      <td class="title">
                         <div class="title-wrap">
-                           <h4><?php _e('Single Product Slider Widget','open-shop'); ?> </h4>
+                           <h4> <?php _e('Product Slider Widget','open-shop'); ?> </h4>
                         </div>
                      </td>
                      <td class="status error"><span class="dashicon dashicons dashicons-no-alt" size="30"></span></td>
                      <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
                   </tr>
 
-                            
+
+                  <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4> <?php _e('Single Category Slider Widget','open-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status error"><span class="dashicon dashicons dashicons-no-alt" size="30"></span></td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
+                  </tr>
 
 
+                  <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4> <?php _e('Single Product Slider Widget','open-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status error"><span class="dashicon dashicons dashicons-no-alt" size="30"></span></td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
+                  </tr>
                   
                     <tr class="feature-row th-buy-pro">
                      <td class="title">
