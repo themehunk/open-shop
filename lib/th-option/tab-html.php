@@ -63,7 +63,7 @@
                 <div class="title-plugin">
                 <h3><?php _e('Click Here To Import Demo Content','open-shop'); ?></h3>
 				 
-				 <p> <?php _e('You need to Install required plugins like- Themehunk Customizer, WooCommerce and One click demo import plugin. After installing required plugins import button will activate.', 'open-shop'); ?></p>
+				 <p> <?php _e('You need to Install required plugins like- Hunk Companion, WooCommerce and One click demo import plugin. After installing required plugins import button will activate.', 'open-shop'); ?></p>
               <a class="button disabled importdemo"><?php _e( 'Import Demo', 'open-shop' ); ?></a>
 				 
              </div>

@@ -25,6 +25,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
 = 1.3.8 =
 * Th option panel updated.
+* Child theme notification added.
 
 = 1.3.7 =
 * Th advance product search plugin url issue fixed.

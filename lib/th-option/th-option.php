@@ -1,6 +1,6 @@
 <?php
 include_once( ABSPATH . 'wp-admin/includes/plugin-install.php' );
-class Open_Shop_theme_option{
+class open_shop_theme_option{
 function __construct(){
 add_action( 'admin_enqueue_scripts', array($this,'admin_scripts'));
 add_action('admin_menu', array($this,'menu_tab'));
@@ -8,7 +8,6 @@ add_action('admin_menu', array($this,'menu_tab'));
     // AJAX.
     add_action( 'wp_ajax_th_activeplugin',array($this,'th_activeplugin') );
     add_action( 'wp_ajax_default_home',array($this, 'default_home') );
-    add_action( 'admin_notices', array($this, 'child_theme_admin_notice') );
 }
 function menu_tab() {
     $menu_title = esc_html__('Open Shop Options', 'open-shop');
@@ -157,6 +156,7 @@ function plugin_install_button($plugin){
  * Include Welcome page content
  */
  public  function plugin_install($rplugins = 'recommend-plugins'){
+
     $recommend_plugins = get_theme_support( $rplugins );
 
        if ( is_array( $recommend_plugins ) && isset( $recommend_plugins[0] ) ){
@@ -224,14 +224,6 @@ function plugin_install_button($plugin){
     } // plugin check
 }
 
-	public function child_theme_admin_notice() {
-    ?>
-    <div class="notice notice-success is-dismissible child-theme-notice">
-        <p><?php _e( "We highly recommended to use child theme. Child theme inherit the style and functionality of parent theme, you can easily update the parent theme without losing its Customization. That's why we recommended to use child theme to make your site update proof.", 'open-shop' ); ?></p>
-        <a href="<?php echo esc_url('https://themehunk.com/child-theme/#open-shop-child'); ?>" class="button" target="_blank"><?php _e('Get child theme Now','open-shop') ?></a>
-    </div>
-    <?php
-}	
 	
 } // class end
-$boj = new Open_Shop_theme_option(); ?>
+$boj = new open_shop_theme_option(); ?>

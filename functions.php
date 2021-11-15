@@ -112,11 +112,12 @@ define( 'OPEN_SHOP_THEME_SETTINGS', 'open-shop-settings' );
         // Recommend plugins
         add_theme_support( 'recommend-plugins', array(
 
-        	'themehunk-customizer' => array(
-                'name' => esc_html__( 'Themehunk Customizer (Highly Recommended)', 'open-shop' ),
-                 'img' => 'icon-128x128.png',
-                'active_filename' => 'themehunk-customizer/themehunk-customizer.php',
+            'hunk-companion' => array(
+                'name' => esc_html__( 'Hunk Companion (Highly Recommended)', 'open-shop' ),
+                'img' => 'icon-128x128.png',
+                'active_filename' => 'hunk-companion/hunk-companion.php',
             ),
+
             'th-advance-product-search' => array(
             'name' => esc_html__( 'TH Advance Product Search', 'open-shop' ),
             'img' => 'icon-128x128.gif',
@@ -165,10 +166,11 @@ define( 'OPEN_SHOP_THEME_SETTINGS', 'open-shop-settings' );
 
         // Import Data Content plugins
         add_theme_support( 'import-demo-content', array(
-             'themehunk-customizer' => array(
-                'name' => esc_html__( 'Themehunk Customizer', 'open-shop' ),
-                 'img' => 'icon-128x128.png',
-                'active_filename' => 'themehunk-customizer/themehunk-customizer.php',
+
+             'hunk-companion' => array(
+                'name' => esc_html__( 'Hunk Companion', 'open-shop' ),
+                'img' => 'icon-128x128.png',
+                'active_filename' => 'hunk-companion/hunk-companion.php',
             ),
 
             'one-click-demo-import' => array(

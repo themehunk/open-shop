@@ -2,7 +2,7 @@
 <!--- tab first -->
 <div class="theme_link">
     <h3><?php _e('1. Install Recommended Plugins','open-shop'); ?></h3>
-    <p><?php _e('We highly Recommend to install ThemeHunk Customizer plugin to get all customization options in Open Shop theme. Also install recommended plugins available in recommended tab.','open-shop'); ?></p>
+    <p><?php _e('We highly Recommend to install Hunk Companion plugin to get all customization options in Open Shop theme. Also install recommended plugins available in recommended tab.','open-shop'); ?></p>
 </div>
 <div class="theme_link">
     <h3><?php _e('2. Setup Home Page','open-shop'); ?><!-- <php echo $theme_config['plugin_title']; ?> --></h3>

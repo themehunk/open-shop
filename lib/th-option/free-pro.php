@@ -266,10 +266,10 @@
                     <tr class="feature-row th-buy-pro">
                      <td class="title">
                         <div class="title-wrap">
-                           <h4><?php _e('Get Pro Theme','open-shop'); ?> </h4>
+                           <h4><?php _e('Pro Theme','open-shop'); ?> </h4>
                         </div>
                      </td>
-                     <td class="status upsell"><?php _e('Get access to all Pro features','open-shop'); ?> </td>
+                     <td class="status upsell"><?php _e('Access to all Pro features','open-shop'); ?> </td>
                      <td class="status success"><a href="https://themehunk.com/product/open-shop-pro/" target="_blank" rel="external noreferrer noopener" class="components-button is-primary"><?php _e('Get Open Shop Pro Now','open-shop'); ?></a></td>
                   </tr>
 
