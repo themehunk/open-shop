@@ -265,15 +265,7 @@ if ( ! class_exists( 'Open_Shop_Woocommerce_Ext' ) ) :
 			$localize['qv_loader'] = $loader;
 			return $localize;
 		}
-		/****************/
-        // add to compare
-        /****************/
-        function open_shop_add_to_compare($pid=''){
-        if( is_plugin_active('yith-woocommerce-compare/init.php') ){
-          return '<div class="thunk-compare"><span class="compare-list"><div class="woocommerce product compare-button"><a href="'.esc_url(home_url()).'?action=yith-woocompare-add-product&id='.$pid.'" class="compare button" data-product_id="'.$pid.'" rel="nofollow">Compare</a></div></span></div>';
-
-           }
-        }
+		
 		/**
 		 * Quick view on image
 		 */

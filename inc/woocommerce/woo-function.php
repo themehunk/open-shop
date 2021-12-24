@@ -34,7 +34,7 @@ function open_shop_whishlist_check($pid){
         echo open_shop_wpc_whish_list($pid);          
     }
 
-     if( class_exists( 'YITH_Woocompare' ) ){
+     if( class_exists( 'th_product_compare' ) ){
         echo open_shop_add_to_compare_fltr($pid);
         }elseif( class_exists( 'WPCleverWoosc' )){
         echo open_shop_wpc_add_to_compare_fltr($pid);          
@@ -283,13 +283,20 @@ add_action( 'woocommerce_after_single_product_summary', 'open_shop_single_summar
 // YITH add to compare
 /****************/
 
-function open_shop_add_to_compare_fltr($pid){
-            if( class_exists( 'YITH_Woocompare' ) ){
 
-          echo '<div class="thunk-compare"><span class="compare-list"><div class="woocommerce product compare-button"><a href="'.home_url().'?action=yith-woocompare-add-product&id='.esc_attr($pid).'" class="compare button" data-product_id="'.esc_attr($pid).'" rel="nofollow">Compare</a></div></span></div>';
-      }
+function open_shop_add_to_compare_fltr($pid){ 
+  if(class_exists(('th_product_compare') )){
+    global $product;
+    $pid = $product->get_id();
+    echo '<div class="thunk-compare"><span class="compare-list"><div class="woocommerce product compare-button">
+          <a class="th-product-compare-btn compare" data-th-product-id="'.$pid.'"></a>
+          </div></span></div>';
 
+           }
         }
+
+
+
 
 /**********************/
 /** YITH wishlist **/

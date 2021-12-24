@@ -149,10 +149,10 @@ define( 'OPEN_SHOP_THEME_SETTINGS', 'open-shop-settings' );
                   'img' => 'icon-128x128.jpg',
                  'active_filename' => 'yith-woocommerce-wishlist/init.php',
              ),
-            'yith-woocommerce-compare' => array(
-                 'name' => esc_html__( 'YITH WooCommerce Compare', 'open-shop' ),
-                  'img' => 'icon-128x128.jpg',
-                 'active_filename' => 'yith-woocommerce-compare/init.php',
+            'th-product-compare' => array(
+                 'name' => esc_html__( 'Th Product Compare', 'open-shop' ),
+                  'img' => 'icon-128x128.png',
+                 'active_filename' => 'th-product-compare/th-product-compare.php',
              ),
 
             'themehunk-megamenu-plus' => array(
