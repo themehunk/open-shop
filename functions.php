@@ -123,6 +123,13 @@ define( 'OPEN_SHOP_THEME_SETTINGS', 'open-shop-settings' );
             'img' => 'icon-128x128.gif',
             'active_filename' => 'th-advance-product-search/th-advance-product-search.php',
             ),
+            
+            'th-product-compare' => array(
+                 'name' => esc_html__( 'Th Product Compare', 'open-shop' ),
+                  'img' => 'icon-128x128.png',
+                 'active_filename' => 'th-product-compare/th-product-compare.php',
+             ),
+
             'th-variation-swatches' => array(
                 'name' => esc_html__( 'TH Variation Swatches', 'open-shop' ),
                  'img' => 'icon-128x128.gif',
@@ -148,11 +155,6 @@ define( 'OPEN_SHOP_THEME_SETTINGS', 'open-shop-settings' );
                  'name' => esc_html__( 'YITH WooCommerce Wishlist', 'open-shop' ),
                   'img' => 'icon-128x128.jpg',
                  'active_filename' => 'yith-woocommerce-wishlist/init.php',
-             ),
-            'th-product-compare' => array(
-                 'name' => esc_html__( 'Th Product Compare', 'open-shop' ),
-                  'img' => 'icon-128x128.png',
-                 'active_filename' => 'th-product-compare/th-product-compare.php',
              ),
 
             'themehunk-megamenu-plus' => array(
