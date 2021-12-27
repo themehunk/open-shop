@@ -241,6 +241,7 @@ add_action( 'woocommerce_after_shop_loop', 'open_shop_shop_content_end',1);
 
 remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );
 remove_action( 'woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open');
+remove_action('woocommerce_init','th_compare_add_action_shop_list');
 
 //To integrate with a theme, please use bellow filters to hide the default buttons. hide default wishlist button on product archive page
 add_filter( 'woosw_button_position_archive', function() {
@@ -279,10 +280,9 @@ add_action( 'woocommerce_before_single_product_summary', 'open_shop_single_summa
 add_action( 'woocommerce_after_single_product_summary', 'open_shop_single_summary_end',0);
 
 
-/****************/
-// YITH add to compare
-/****************/
-
+/***********************/
+// Th Compare Product 
+/**********************/
 
 function open_shop_add_to_compare_fltr($pid){ 
   if(class_exists(('th_product_compare') )){
