@@ -4171,6 +4171,7 @@ select {
 .woocommerce div.product form.cart {
     margin-bottom: 20px;
     float: left;
+   
 }
 
 .woocommerce div.product form.cart .variations select {
@@ -4712,6 +4713,10 @@ top:0em!important;
     display: block;
     color: #9c9c9c;
     font-size: 13px;
+}
+
+.woocommerce .entry-summary a.th-product-compare-btn.btn_type{
+    padding: 0;
 }
 
 .woocommerce .entry-summary a.compare.button.added:before {
