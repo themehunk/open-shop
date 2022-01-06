@@ -34,6 +34,8 @@ $data = apply_filters(
     wp_localize_script( 'open-shop-admin-load', 'THAdmin', $data); 
 
 
+}else {
+ wp_enqueue_style( 'thunk-notify-css', get_template_directory_uri() . '/lib/th-option/assets/css/notify.css' ); 
 }
 }
 function tab_constant(){

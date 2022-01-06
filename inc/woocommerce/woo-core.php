@@ -179,6 +179,11 @@ if ( ! class_exists( 'Open_Shop_Woocommerce_Ext' ) ) :
 			
 
 		    }
+
+		    if(class_exists('Taiowc_Pro')){
+                $classes[] ='taiowc-fly-cart';
+			}
+		    
 			return $classes;
 		}
 		/**

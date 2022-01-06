@@ -45,48 +45,6 @@ function open_shop_whishlist_check($pid){
 }
 
 
-//cart view function
-function open_shop_menu_cart_view($cart_view){
-	global $woocommerce;
-    $cart_view= open_shop_cart_total_item();
-    return $cart_view;
-}
-add_action( 'open_cart_count','open_shop_menu_cart_view');
-
-function open_shop_woo_cart_product(){
-global $woocommerce;
-?>
-<div id="open-cart" class="open-cart">
-<div class="open-quickcart-dropdown">
-<?php 
-woocommerce_mini_cart(); 
-?>
-</div>
-</div>
-    <?php
-}
-add_action( 'open_shop_woo_cart', 'open_shop_woo_cart_product' );
-add_filter('woocommerce_add_to_cart_fragments', 'open_shop_add_to_cart_dropdown_fragment');
-function open_shop_add_to_cart_dropdown_fragment( $fragments ){
-   global $woocommerce;
-   ob_start();
-   ?>
-   <div class="open-quickcart-dropdown">
-       <?php woocommerce_mini_cart(); ?>
-   </div>
-   <?php $fragments['div.open-quickcart-dropdown'] = ob_get_clean();
-   return $fragments;
-}
-add_filter('woocommerce_add_to_cart_fragments', 'open_shop_add_to_cart_fragment');
-function open_shop_add_to_cart_fragment($fragments){
-        ob_start();?>
-
-          <a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart','open-shop' ); ?>"><i class="fa fa-shopping-basket"></i> <span class="cart-content"><?php echo sprintf ( _n( '<span class="count-item">%d <span class="item">'.__('item','open-shop').'</span></span>', '<span class="count-item">%d <span class="item">'.__('items','open-shop').'</span></span>', WC()->cart->get_cart_contents_count(),'open-shop' ), WC()->cart->get_cart_contents_count() ); ?><?php echo WC()->cart->get_cart_total(); ?></span></a>
-
-       <?php  $fragments['a.cart-contents'] = ob_get_clean();
-
-        return $fragments;
-    }
 /***********************************************/
 //Sort section Woocommerce category filter show
 /***********************************************/
