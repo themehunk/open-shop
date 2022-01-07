@@ -255,19 +255,24 @@ $open_shop_menu_open = get_theme_mod('open_shop_mobile_menu_open','left');
                         if (wp_is_mobile()!== true):
                           
                       ?>
-                      <div class="cart-icon" > 
-                         <?php 
-                         do_action( 'open_cart_count' );
-                         do_action( 'open_shop_woo_cart' ); 
-                         ?>
+                      <div class="cart-icon" >
+                      
+                        <?php if ( shortcode_exists( 'taiowc' ) ){
+                        echo do_shortcode('[taiowc]');
+                         } ?> 
+
+                  
                        </div>
                       <?php  endif; }
                       elseif(get_theme_mod('open_shop_cart_mobile_disable')==false){?>
-                           <div class="cart-icon" > 
-                            <?php 
-                               do_action( 'open_cart_count' );
-                               do_action( 'open_shop_woo_cart' ); 
-                               ?>
+
+
+                           <div class="cart-icon" >
+                        <?php if ( shortcode_exists( 'taiowc' ) ){
+                        echo do_shortcode('[taiowc]');
+                         } ?> 
+
+                            
                           </div>
                      <?php  } } ?>  
                   </div>      
@@ -526,10 +531,12 @@ add_action('open_shop_site_preloader','open_shop_preloader');
                 </div>
              <?php if(class_exists( 'WooCommerce' )){ ?>
                       <div class="cart-icon" > 
-                         <?php 
-                         do_action( 'open_cart_count' );
-                         do_action( 'open_shop_woo_cart' ); 
-                         ?>
+
+                        <?php if ( shortcode_exists( 'taiowc' ) ){
+                        echo do_shortcode('[taiowc]');
+                         } ?> 
+
+                         
                        </div>
                       <?php  } ?> 
                   </div>

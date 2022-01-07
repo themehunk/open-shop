@@ -177,15 +177,9 @@ a.plugin-detail.thickbox.open-plugin-details-modal {
     margin-bottom: 35px;
 }
 
-
-
-
 .main {
     display: flex;
 }
-
-
-
 
 /* Create an active/current tablink class */
 .th-option-bottom-hdr .tablinks.active {
@@ -497,4 +491,8 @@ display: flex;
     width: 18%;
    padding: 1%;
 }
+}
+
+.notice.notice-success.is-dismissible.th-theme-notice {
+    display: none;
 }

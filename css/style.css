@@ -4684,8 +4684,7 @@ top:0em!important;
 }*/
 
 /*compare style*/
-.woocommerce .entry-summary a.th-product-compare-btn,
-.woocommerce .entry-summary a.compare.button, .entry-summary .wooscp-btn {
+.woocommerce .entry-summary a.th-product-compare-btn{
     border: 1px solid;
     border-radius: 0;
     color: #9c9c9c;
@@ -4706,8 +4705,7 @@ top:0em!important;
     margin-right: 10px;
 }
 
-.woocommerce .entry-summary a.th-product-compare-btn.btn_type:before,
-.woocommerce .entry-summary a.compare.button:before {
+.woocommerce .entry-summary a.th-product-compare-btn.btn_type:before{
     content: "\f0ec";
     font-family: FontAwesome;
     display: block;
@@ -7160,6 +7158,20 @@ text-decoration: underline !important;
     margin: 0;
     display: inline-block;
 }
+
+/* All in one woo cart */
+.taiowc-icon svg, .taiowc-icon img {
+    width: 1.3rem;
+    fill: #fff;
+}
+
+.taiowc-cart-item {
+    background: transparent;
+    color: #fff;
+}
+
+
+
 
 
 
