@@ -7160,12 +7160,12 @@ text-decoration: underline !important;
 }
 
 /* All in one woo cart */
-.taiowc-icon svg, .taiowc-icon img {
+.thunk-icon .taiowc-icon svg, .thunk-icon .taiowc-icon img {
     width: 1.3rem;
     fill: #fff;
 }
 
-.taiowc-cart-item {
+.thunk-icon .cart-icon .taiowc-cart-item {
     background: transparent;
     color: #fff;
 }
@@ -8808,11 +8808,29 @@ text-decoration: underline !important;
 
     .wcfm-dashboard-page .media-frame-toolbar {
         bottom: 125px;
-    }
+    } 
 
-    
+    .thaps-search-form {
+    width: 100% !important;
+} 
 
 }
+
+
+
+@media screen and (max-width:720px) {
+.thaps-search-form {
+    width: 100% !important;
+}
+.thunk-icon .taiowc-cart-item {
+    padding: 0.4rem 0.3rem 0.4rem 0.3rem;
+    }
+
+}
+
+
+
+
 
 @media screen and (max-width:550px) {
     .sidebar-content-area {
@@ -8870,6 +8888,36 @@ text-decoration: underline !important;
     .thmk-woocommerce-search-wrap .thmk-woocommerce-search-result {
     width: 100%;
 }
+
+
+.thaps-search-form {
+    width: 70% !important;
+}
+.thunk-icon .taiowc-cart-item {
+    padding: 0.4rem 0.3rem 0.4rem 0.3rem;
+    }
+
+
+}
+
+@media screen and (max-width:640px) {
+.thaps-search-form {
+    width: 75% !important;
+}
+.thunk-icon .taiowc-cart-item {
+    padding: 0.4rem 0.3rem 0.4rem 0.3rem;
+    }
+
+}
+
+
+@media screen and (max-width:320px) {
+.thaps-search-form {
+    width: 55% !important;
+}
+.thunk-icon .taiowc-cart-item {
+    padding: 0.4rem 0.3rem 0.4rem 0.3rem;
+    }
 
 }
 

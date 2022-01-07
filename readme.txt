@@ -31,6 +31,8 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 * Th option panel sidebar text updated.
 * Th all in one woo cart plugin class taiowc-fly-cart added.
 * Remove theme support for widget block editor.
+* Th all in one woo cart responsive issue fixed.
+
 
 = 1.3.9 =
 * Th product compare plugin added.
