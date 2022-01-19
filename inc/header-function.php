@@ -236,14 +236,7 @@ $open_shop_menu_open = get_theme_mod('open_shop_mobile_menu_open','left');
 				   </div>
            <div class="below-header-col2">
              <?php  
-             if ( shortcode_exists('th-aps')){
-               echo do_shortcode('[th-aps]');
-               }elseif ( !shortcode_exists('th-aps') && is_user_logged_in()) {
-                $url = admin_url('themes.php?page=thunk_started&searchp');
-                      echo '<a href="'.$url.'" target="_blank" class="plugin-active-msg">'.__('Please install th advance product search plugin','open-shop').'</a>';
-               }else{
-                echo "&nbsp&nbsp";
-               }
+             open_shop_th_advance_product_search();
             ?>
          </div>
            <div class="below-header-col3">
@@ -255,25 +248,21 @@ $open_shop_menu_open = get_theme_mod('open_shop_mobile_menu_open','left');
                         if (wp_is_mobile()!== true):
                           
                       ?>
-                      <div class="cart-icon" >
+                     
                       
-                        <?php if ( shortcode_exists( 'taiowc' ) ){
-                        echo do_shortcode('[taiowc]');
-                         } ?> 
+                        <?php open_shop_th_cart(); ?> 
 
                   
-                       </div>
+                     
                       <?php  endif; }
                       elseif(get_theme_mod('open_shop_cart_mobile_disable')==false){?>
 
 
-                           <div class="cart-icon" >
-                        <?php if ( shortcode_exists( 'taiowc' ) ){
-                        echo do_shortcode('[taiowc]');
-                         } ?> 
+                         
+                        <?php open_shop_th_cart(); ?> 
 
                             
-                          </div>
+                          
                      <?php  } } ?>  
                   </div>      
             </div>
@@ -532,9 +521,7 @@ add_action('open_shop_site_preloader','open_shop_preloader');
              <?php if(class_exists( 'WooCommerce' )){ ?>
                       <div class="cart-icon" > 
 
-                        <?php if ( shortcode_exists( 'taiowc' ) ){
-                        echo do_shortcode('[taiowc]');
-                         } ?> 
+                        <?php open_shop_th_cart(); ?> 
 
                          
                        </div>
@@ -549,12 +536,7 @@ add_action('open_shop_site_preloader','open_shop_preloader');
                      <div class="container">
                       <div class="search-close"><a class="search-close-btn"></a></div>
                      <?php 
-                if ( class_exists( 'WooCommerce' ) && shortcode_exists('th-aps')){
-               echo do_shortcode('[th-aps]');
-               }elseif ( !shortcode_exists('th-aps') && is_user_logged_in()) {
-                $url = admin_url('themes.php?page=thunk_started&searchp');
-                      echo '<a href="'.$url.'" target="_blank" class="plugin-active-msg">'.__('Please install th advance product search plugin','open-shop').'</a>';
-               }?>
+                open_shop_th_advance_product_search();?>
                        </div>
        </div> 
  <?php }
@@ -562,3 +544,61 @@ add_action('open_shop_site_preloader','open_shop_preloader');
 if(get_theme_mod('open_shop_sticky_header',false)==true):
 add_action('open_shop_sticky_header','open_shop_sticky_header_markup');
 endif;
+
+//********************************//
+//th advance product search 
+//*******************************//
+function open_shop_th_advance_product_search(){
+
+              if ( shortcode_exists('th-aps') ){
+
+                echo do_shortcode('[th-aps]');
+
+              } elseif ( !shortcode_exists('th-aps') && is_user_logged_in()) {
+
+                $url = admin_url('themes.php?page=thunk_started&th-tab=recommended-plugin');
+
+                ?>
+
+                <a target="_blank" class="plugin-active-msg" href="<?php echo esc_url($url);?>">
+
+                  <?php _e('Please Install "th advance product search" Plugin','open-shop');?>
+                  
+                </a>
+
+
+                <?php      
+
+            }
+}
+
+//********************************//
+//th woo cart 
+//*******************************//
+
+function open_shop_th_cart(){
+
+  if ( shortcode_exists('taiowc') ){?>
+              <div class="cart-icon">
+
+                <?php echo do_shortcode('[taiowc]');?>
+
+              </div>  
+
+             <?php  } elseif ( !shortcode_exists('taiowc') && is_user_logged_in()) {
+
+                $url = admin_url('themes.php?page=thunk_started&th-tab=recommended-plugin');
+
+                ?>
+
+                <a target="_blank" class="cart-plugin-active-msg" href="<?php echo esc_url($url);?>">
+
+                  <?php _e('Add Cart','open-shop');?>
+                  
+                </a>
+
+
+                <?php      
+
+            }
+}
