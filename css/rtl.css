@@ -6466,17 +6466,19 @@ margin-right: 0;
     left: -18px;
     z-index: 1;
 }
-.thunk-icon .cart-icon{
-height: 49px;
-    width: 49px;
 
-}
 .cart-plugin-active-msg{
 display: table-cell;
     padding-top: 10px;
 }
-.thunk-product .th-product-compare-btn.compare:after{
-content:'compare';
+
+.thunk-icon .taiowc-cart-item {
+    padding:0.8rem;
+}
+
+.sticky-header-col3 .thunk-icon .taiowc-cart-item{
+    height: 35px;
+    line-height: 35px
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape)  {
@@ -6606,6 +6608,9 @@ margin-left:5px;
     display:block;
 }
 /*header icon*/
+ .taiowc-content .taiowc-total {
+       margin-left: 0;
+    }
 .thunk-icon .cart-icon a.cart-contents{
 position: relative;
     padding: 0;
@@ -6902,7 +6907,7 @@ float:left;
 /*wishlist and compare icon*/
 .thunk-wishlist .yith-wcwl-add-button a.add_to_wishlist, 
 .thunk-wishlist .yith-wcwl-wishlistexistsbrowse.show a,
-.thunk-compare .compare-button a.compare.button,.thunk-product .th-product-compare-btn.compare:after {
+.thunk-compare .compare-button a.compare.button{
     font-size: 0;
 letter-spacing: normal;
 }
@@ -7221,7 +7226,7 @@ left:15px
 .sticky-header-col1{
 width:50%;
 }
-.header-icon a, .thunk-icon .cart-icon a.cart-contents, .thunk-icon .cart-icon{
+.header-icon a, .thunk-icon .cart-icon a.cart-contents{
         height: 35px;
         width: 35px;
         line-height: 35px;

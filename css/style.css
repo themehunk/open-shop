@@ -6194,11 +6194,15 @@ section.thunk-ribbon-section .content-wrap {
     width: 25%;
 }
 
-.sticky-header-col3 .thunk-icon .cart-icon a.cart-contents, .sticky-header-col3 .header-icon a, a.prd-search,.sticky-header-col3 .thunk-icon .cart-icon {
+.sticky-header-col3 .thunk-icon .cart-icon a.cart-contents, .sticky-header-col3 .header-icon a, a.prd-search{
     height: 35px;
     width: 35px;
     line-height: 35px;
     margin: 0px 8px 0px 0px;
+}
+.sticky-header-col3 .thunk-icon .taiowc-cart-item{
+    height: 35px;
+    line-height: 35px
 }
 .sticky-header-col3 .thunk-icon .taiowc-icon svg, 
 .sticky-header-col3 .thunk-icon .taiowc-icon img {
@@ -7186,19 +7190,15 @@ text-decoration: underline !important;
     left: -18px;
     z-index: 1;
 }
-.thunk-icon .cart-icon{
-height: 49px;
-    width: 49px;
 
-}
 .cart-plugin-active-msg{
 display: table-cell;
     padding-top: 10px;
 }
-.thunk-product .th-product-compare-btn.compare:after{
-content:'compare';
-}
 
+.thunk-icon .taiowc-cart-item {
+    padding:0.8rem;
+}
 
 @media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2)  and (orientation:landscape) {
     .thunk-product-hover {
@@ -7361,7 +7361,10 @@ content:'compare';
     .thunk-icon .cart-icon a.cart-contents i {
         border-right: none !important;
     }
-
+    
+    .taiowc-content .taiowc-total {
+       margin-left: 0;
+    }
     /*header-one*/
     .mhdrone .main-header-col1 {
         order: 3;
@@ -7628,7 +7631,7 @@ content:'compare';
     /*wishlist and compare icon*/
     .thunk-wishlist .yith-wcwl-add-button a.add_to_wishlist,
      .thunk-wishlist .yith-wcwl-wishlistexistsbrowse.show a,
-      .thunk-compare .compare-button a.compare.button,.thunk-product .th-product-compare-btn.compare:after{
+      .thunk-compare .compare-button a.compare.button{
         font-size: 0;
         letter-spacing: normal;
     }
@@ -8300,7 +8303,7 @@ content:'compare';
         justify-content: center;
     }
 
-    .header-icon a, .thunk-icon .cart-icon a.cart-contents, .thunk-icon .cart-icon{
+    .header-icon a, .thunk-icon .cart-icon a.cart-contents{
         height: 35px;
         width: 35px;
         line-height: 35px;
