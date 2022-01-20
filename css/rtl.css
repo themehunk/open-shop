@@ -6480,7 +6480,9 @@ display: table-cell;
     height: 35px;
     line-height: 35px
 }
-
+ .woocommerce .th-compare-output-product a.button.product_type_simple{
+width:auto;
+}
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape)  {
 .thunk-product-hover{
     position: relative;
