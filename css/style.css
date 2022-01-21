@@ -7199,7 +7199,9 @@ display: table-cell;
 .thunk-icon .taiowc-cart-item {
     padding:0.8rem;
 }
-
+ .woocommerce .th-compare-output-product a.button.product_type_simple{
+width:auto;
+}
 @media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2)  and (orientation:landscape) {
     .thunk-product-hover {
         position: relative;
@@ -7659,7 +7661,7 @@ display: table-cell;
         margin: 0;
     }
 
-    .thunk-wishlist a, .thunk-compare a {
+    .thunk-wishlist a, .thunk-compare a,.thunk-compare .compare-button a {
         font-size: 0;
         margin: 0;
         display: inline-block;
