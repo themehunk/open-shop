@@ -353,7 +353,11 @@ function open_shop_scripts(){
 
 	// enqueue css
 	$min = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+
 	wp_enqueue_style( 'font-awesome', OPEN_SHOP_THEME_URI . '/third-party/fonts/font-awesome/css/font-awesome.css', '', OPEN_SHOP_THEME_VERSION );
+
+	wp_enqueue_style( 'th-icon', OPEN_SHOP_THEME_URI . '/third-party/fonts/th-icon/style.css','',OPEN_SHOP_THEME_VERSION);
+
 	wp_enqueue_style( 'animate', OPEN_SHOP_THEME_URI . '/css/animate.css','',OPEN_SHOP_THEME_VERSION);
 	wp_enqueue_style( 'open-shop-menu', OPEN_SHOP_THEME_URI . '/css/open-shop-menu.css','',OPEN_SHOP_THEME_VERSION);
 	
