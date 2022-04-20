@@ -405,11 +405,11 @@ $acc_icon = get_theme_mod('open_shop_account_mobile_disable',false);
       if($whs_icon == true){ 
        if (wp_is_mobile()!== true):
         ?>
-      <a class="whishlist" href="<?php echo esc_url( open_shop_whishlist_url() ); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a>
+      <a class="whishlist" href="<?php echo esc_url( open_shop_whishlist_url() ); ?>"><i  class="th-icon th-icon-heartline" aria-hidden="true"></i></a>
       
      <?php endif; }
      elseif($whs_icon == false){?>
-        <a class="whishlist" href="<?php echo esc_url( open_shop_whishlist_url() ); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a>
+        <a class="whishlist" href="<?php echo esc_url( open_shop_whishlist_url() ); ?>"><i  class="th-icon th-icon-heartline" aria-hidden="true"></i></a>
     <?php  } }
 
     //WPC Smart Wishlist Icon
@@ -417,11 +417,11 @@ $acc_icon = get_theme_mod('open_shop_account_mobile_disable',false);
       if($whs_icon == true){ 
        if (wp_is_mobile()!== true):
         ?>
-      <a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a>
+      <a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>"><i  class="th-icon th-icon-heartline" aria-hidden="true"></i></a>
       
      <?php endif; }
      elseif($whs_icon == false){?>
-        <a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a>
+        <a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>"><i  class="th-icon th-icon-heartline" aria-hidden="true"></i></a>
     <?php  } }
 
 
@@ -506,14 +506,22 @@ add_action('open_shop_site_preloader','open_shop_preloader');
               <div class="thunk-icon">
         
                 <div class="header-icon">
-                  <a class="prd-search" href="#"><i class="fa fa-search"></i></a>     
+                  <a class="prd-search-icon"><?php  if ( shortcode_exists('tapsp') ){
+
+          echo do_shortcode('[tapsp layout="icon_style"]'); 
+
+        }elseif( shortcode_exists('th-aps') ){
+
+              echo do_shortcode('[th-aps layout="icon_style"]'); 
+              
+        }?></a>        
                      <?php 
                      if( class_exists( 'WPCleverWoosw' )){ ?>
-                      <a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a>
+                      <a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>"><i  class="th-icon th-icon-heartline" aria-hidden="true"></i></a>
                    <?php  }
                     if( class_exists( 'YITH_WCWL' ) && (! class_exists( 'WPCleverWoosw' ))){
                       ?>
-                      <a class="whishlist" href="<?php echo esc_url(open_shop_whishlist_url() ); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a>
+                      <a class="whishlist" href="<?php echo esc_url(open_shop_whishlist_url() ); ?>"><i  class="th-icon th-icon-heartline" aria-hidden="true"></i></a>
                      <?php } 
                         open_shop_account();
                        ?>
@@ -554,7 +562,11 @@ function open_shop_th_advance_product_search(){
 
                 echo do_shortcode('[th-aps]');
 
-              } elseif ( !shortcode_exists('th-aps') && is_user_logged_in()) {
+              }elseif ( shortcode_exists('tapsp') ){
+
+                echo do_shortcode('[tapsp]');
+
+              }elseif ( !shortcode_exists('th-aps') && !shortcode_exists('tapsp') && is_user_logged_in()) {
 
                 $url = admin_url('themes.php?page=thunk_started&th-tab=recommended-plugin');
 
@@ -578,14 +590,23 @@ function open_shop_th_advance_product_search(){
 
 function open_shop_th_cart(){
 
-  if ( shortcode_exists('taiowc') ){?>
+  if ( shortcode_exists('taiowc') ){ ?>
+
+             <div class="cart-icon">
+
+             <?php echo do_shortcode('[taiowc]');?>
+
+             </div>  
+
+             <?php  }elseif ( shortcode_exists('taiowcp') ){ ?>
+
               <div class="cart-icon">
 
-                <?php echo do_shortcode('[taiowc]');?>
+             <?php echo do_shortcode('[taiowcp]');?>
 
               </div>  
 
-             <?php  } elseif ( !shortcode_exists('taiowc') && is_user_logged_in()) {
+             <?php  } elseif ( !shortcode_exists('taiowc') && !shortcode_exists('taiowcp') && is_user_logged_in()) {
 
                 $url = admin_url('themes.php?page=thunk_started&th-tab=recommended-plugin');
 

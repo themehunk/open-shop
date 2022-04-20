@@ -1956,7 +1956,7 @@ color:#ff0052;
 }
 
 .header-icon a i{
-font-size:15px;
+font-size:23px;
 line-height: inherit;
 font-weight: bold;
 
@@ -2676,9 +2676,9 @@ font-family: "Roboto-Bold", sans-serif;
 opacity:1;
 }
 .thunk-compare .compare-button a:before{
-content: "\f0ec";
-font-family: 'fontawesome';
-margin-left:5px;
+   content: "\e917";
+    font-family: th-icon;
+    margin-right: 5px;
 }
 .thunk-wishlist,.thunk-compare{
 width:auto;
@@ -6442,16 +6442,13 @@ margin-right: 0;
     display: inline-block;
 }
 
-/* All in one woo cart */
-.thunk-icon .taiowc-icon svg, .thunk-icon .taiowc-icon img {
+/* All in one woo cart */ 
+.thunk-icon .taiowc-icon img {
     width: 1.4rem;
     fill: #fff;
 }
 
-.thunk-icon .cart-icon .taiowc-cart-item,.thunk-icon .taiowc-content .taiowc-total {
-    background: transparent;
-    color: #fff;
-}
+
 .thunk-icon .cart-count-item {
     position: absolute;
     background: #111;
@@ -6478,10 +6475,72 @@ display: table-cell;
 
 .sticky-header-col3 .thunk-icon .taiowc-cart-item{
     height: 35px;
-    line-height: 35px
+    line-height: 35px;
+    background: transparent!important;
 }
  .woocommerce .th-compare-output-product a.button.product_type_simple{
 width:auto;
+}
+
+.wc-item-meta .wc-item-meta-label, .wc-item-meta dt, dl.variation .wc-item-meta-label, dl.variation dt {
+    float: left;
+    clear: both;
+    margin-right: 0.25rem;
+    margin-top: 0;
+    list-style: none outside;
+    font-weight: 400;
+}
+
+.taiowcp-cart-model dd,
+.taiowc-cart-model dd,
+.taiowcp-cart-model dd p,
+.taiowc-cart-model dd p {
+    margin: 0;
+    display: flex;
+    padding: 0;
+}
+.cart-icon .taiowc-content .taiowc-total, .thunk-icon .cart-icon .taiowcp-icon .th-icon, .thunk-icon .cart-icon .taiowcp-content .taiowcp-total, .thunk-icon .cart-icon .taiowc-icon .th-icon, .thunk-icon .cart-icon .taiowc-content .taiowcp-total {
+    color: #ffffff;
+}
+.sticky-header-col3 .cart-icon .taiowc-content .taiowc-total, .sticky-header-col3 .thunk-icon .cart-icon .taiowc-content .taiowcp-total, .sticky-header-col3 .thunk-icon .cart-icon .taiowc-icon .th-icon, .sticky-header-col3 .thunk-icon .cart-icon .taiowcp-content .taiowcp-total, .sticky-header-col3 .thunk-icon .cart-icon .taiowcp-icon .th-icon {
+    color: #111;
+}
+.sticky-header-col3 .cart-count-item {
+    top: -6px;
+    left: auto;
+}
+.sticky-header-col3 .taiowc-content .cart-count-item {
+    top: -18px;
+    left: auto;
+}
+.sticky-header .header-icon a i, .sticky-header-col3 .thunk-icon .cart-icon a.cart-contents i {
+    font-size: 18px;
+}
+.sticky-header-col3 .tapsp-search-box .th-icon, .sticky-header-col3 .thaps-search-box .th-icon {
+    font-size: 18px;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.sticky-header-col3 .tapsp-search-box,.sticky-header-col3 .thaps-search-box  {
+    max-width: inherit;
+    min-width: auto;
+}
+.woocommerce .entry-summary a.th-product-compare-btn:before {
+    content: "\e917";
+    font-family: th-icon;
+    display: block;
+    color: #9c9c9c;
+    font-size: 13px;
+    padding: 0;
+}
+.woocommerce a.th-product-compare-btn.loading::after {
+    top: 5px;
+    right: 0;
+    left: 6px;
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape)  {
 .thunk-product-hover{
@@ -6535,6 +6594,10 @@ box-shadow:none;
 }
 
 @media screen and (max-width: 1024px){
+
+    .thunk-icon .taiowc-content .taiowc-total, .thunk-icon .taiowcp-content .taiowcp-total {
+    margin-left: 0;
+}
   .open-shop-menu > li > a {
 text-align:right;
 }
@@ -6661,9 +6724,7 @@ header .count-item {
     padding: 0;
     right: 0;
 }
-.thunk-icon .cart-icon{
-background:transparent!important;
-}
+
 .thunk-icon .cart-icon a.cart-contents i{
   border-left:none!important;
 }
@@ -7203,7 +7264,7 @@ left:15px
 
 /*sticky header*/
 .sticky-header-col3 .thunk-icon .cart-icon a.cart-contents i, .sticky-header .header-icon a i {
-    font-size: 9px;
+    font-size:18px;
 }
 .sticky-header-col3 .thunk-icon .cart-icon a.cart-contents, .sticky-header-col3 .header-icon a, a.prd-search {
     height: 30px;
@@ -7507,7 +7568,14 @@ width: 18px;
   margin-left: 8px;
 }
 .header-icon a i,.thunk-icon .cart-icon a.cart-contents i{
-  font-size:12px;
+  font-size:18px;
+}
+.sticky-header-col3 .cart-count-item {
+    top: -12px;
+    left: auto;
+}
+.icon_style .tapsp-search-form,.icon_style .thaps-search-form {
+    min-width: 330px!important;
 }
 
 #search-box input[type="text"]{
@@ -7974,7 +8042,7 @@ font-size:11px;
 bottom: 125px;
 }
 .thunk-icon .cart-count-item {
-    left: 35px;
+    left: 27px;
 
 }
 .thunk-icon .taiowc-cart-item, .thunk-icon .taiowc-icon, .taiowc-total {
@@ -7986,6 +8054,13 @@ bottom: 125px;
 .thunk-icon  .taiowc-cart-item {
     padding: 0.4rem;
 }
+.header-icon a, .thunk-icon .cart-icon a.cart-contents,
+ .thunk-icon .taiowc-cart-item, .thunk-icon .taiowcp-cart-item {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+}
+
 }
 @media screen and (max-width:550px){
  .sidebar-content-area {
