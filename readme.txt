@@ -25,6 +25,10 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 = 1.4.2 =
 * Sitch theme hook added.
 
+= 1.4.2
+* Icon Improved
+* Style issue fixed.
+
 = 1.4.1 =
 * Style issue fixed.
 
