@@ -412,3 +412,10 @@ require_once trailingslashit(OPEN_SHOP_THEME_DIR).'inc/init.php';
 function open_shop_is_blog(){
     return ( is_archive() || is_author() || is_category() || is_home() || is_single() || is_tag()) && 'post' == get_post_type();
 }
+
+if ( !empty(get_option( 'theme_mods_openshop-pro')) ) {
+function open_shop_theme_switch() {
+    update_option( 'theme_mods_openshop-pro', get_option( 'theme_mods_open-shop') );
+}
+add_action('switch_theme', 'open_shop_theme_switch');
+}
