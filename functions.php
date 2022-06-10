@@ -11,7 +11,7 @@
  * Theme functions and definitions
  */
 if ( ! function_exists( 'open_shop_setup' ) ) :
-define( 'OPEN_SHOP_THEME_VERSION','1.0.0');
+define( 'OPEN_SHOP_THEME_VERSION','1.4.3');
 define( 'OPEN_SHOP_THEME_DIR', get_template_directory() . '/' );
 define( 'OPEN_SHOP_THEME_URI', get_template_directory_uri() . '/' );
 define( 'OPEN_SHOP_THEME_SETTINGS', 'open-shop-settings' );
@@ -154,6 +154,12 @@ define( 'OPEN_SHOP_THEME_SETTINGS', 'open-shop-settings' );
                  'img' => 'icon-128x128.png',
                 'active_filename' => 'wp-popup-builder/wp-popup-builder.php',
             ), 
+			
+			'unlimited-blocks' => array(
+				'name' => esc_html__( 'Unlimited blocks For Gutenberg', 'open-shop' ),
+				'img' => 'icon-128x128.png',
+				'active_filename' => 'unlimited-blocks/unlimited-blocks.php',
+				),
             'woocommerce' => array(
                 'name' => esc_html__( 'Woocommerce', 'open-shop' ),
                  'img' => 'icon-128x128.png',
