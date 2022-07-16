@@ -38,6 +38,13 @@
                 }
               
             });
+            jQuery("footer .below-footer,footer .below-footer-bar,footer .container,footer div,footer p").attr('style', 'display: block !important');
+          if (jQuery("footer .below-footer").length) {
+            jQuery("footer .widget-footer,footer .top-footer").show();
+          }
+          else{
+            jQuery("footer .widget-footer,footer .top-footer").hide();
+          }
         },
         OffCanvas: function () {
                    var off_canvas_wrapper = $( '.open-shop-off-canvas-sidebar-wrapper');
