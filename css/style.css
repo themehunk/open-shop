@@ -8315,7 +8315,7 @@ width:auto;
         margin-bottom: 20px;
     }
 
-    #sidebar-primary h2.widget-title:hover, .slide-toogle:hover {
+    #sidebar-primary h4.widget-title:hover, .slide-toogle:hover {
         cursor: pointer;
     }
 
