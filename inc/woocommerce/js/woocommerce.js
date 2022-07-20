@@ -38,7 +38,8 @@
                 }
               
             });
-            jQuery("footer .below-footer,footer .below-footer-bar,footer .container,footer div,footer p").attr('style', 'display: block !important');
+            jQuery("footer .below-footer,footer .below-footer-bar,.always-show .below-footer-col1,.always-show p,footer .container").attr('style', 'display: block !important');
+            jQuery(".below-footer span").attr('style', 'display: inline-block !important');
           if (jQuery("footer .below-footer").length) {
             jQuery("footer .widget-footer,footer .top-footer").show();
           }

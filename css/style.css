@@ -4704,15 +4704,6 @@ top:0em!important;
     margin-left: 0;
     margin-right: 10px;
 }
-
-.woocommerce .entry-summary a.th-product-compare-btn.btn_type:before{
-    content: "\f0ec";
-    font-family: FontAwesome;
-    display: block;
-    color: #9c9c9c;
-    font-size: 13px;
-}
-
 .woocommerce .entry-summary a.th-product-compare-btn.btn_type{
     padding: 0;
 }
