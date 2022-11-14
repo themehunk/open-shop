@@ -10,7 +10,7 @@
 ========================*/
 #thnk-quick-view-content .product_meta {
     border: 1px solid #efefef;
-    display: table;
+    display: flex;
     width: 100%;
     margin-bottom: 40px;
 padding:0
@@ -300,6 +300,7 @@ body #thnk-quick-view-modal div.product .flex-viewport {
 #thnk-quick-view-content .product_meta > span{
     font-size: 13px;
     padding: 9px 13px;
+    border: 0;
 }
 #thnk-quick-view-modal div.product form.cart table{
 margin-bottom:5px;

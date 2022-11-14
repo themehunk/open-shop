@@ -8375,9 +8375,12 @@ header .taiowc-cart-item{
     }
     .header-icon a, .thunk-icon .cart-icon a.cart-contents,
  .thunk-icon .taiowc-cart-item, .thunk-icon .taiowcp-cart-item {
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+}
+.tapsp-search-form .tapsp-search-autocomplete{
+    height: 35px;
 }
 .header-icon a i, .thunk-icon .cart-icon a.cart-contents i {
     font-size: 18px;
