@@ -503,7 +503,6 @@ color:#fff;
     transform-origin: center;
     transition: all .3s linear;
     transition-property: transform;
-    -webkit-backface-visibility: hidden;
     font-size: 20px;
     color:#fff;
 }
