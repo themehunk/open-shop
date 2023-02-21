@@ -289,7 +289,7 @@ display: -webkit-inline-box;
     }
     .open-shop-menu > li > a > .arrow:before {
         float: right;
-        content: "\f105";
+        content: "\f107";
     }
 .sider.left .open-shop-menu > li, .sider.right .open-shop-menu > li {
     float: none;
@@ -304,7 +304,7 @@ display: -webkit-inline-box;
     font-size: 12px;
 }
     li.menu-active > a > .arrow:before {
-        content: "\f107" !important;
+        content: "\f106" !important;
     }
     .open-shop-menu li ul.sub-menu > li {
         width: 100%;

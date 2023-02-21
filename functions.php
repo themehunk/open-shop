@@ -71,7 +71,6 @@ define( 'OPEN_SHOP_THEME_SETTINGS', 'open-shop-settings' );
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
 		//Remove theme support for widget block editor 
-		remove_theme_support( 'widgets-block-editor' );
 		/**
 		 * Add support for core custom logo.
 		 */

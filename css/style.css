@@ -1660,10 +1660,10 @@ img {
     width: 100%;
 }
 
-.menu-category-list li  a .arrow:before {
+.theme-open-shop .menu-category-list li  a .arrow:before {
     float: initial;
-    content: "\f105" !important;
-    font-family: FontAwesome;
+    content: "\f105";
+    font-family: th-icon;
 }
 
 .menu-category-list ul[data-menu-style="vertical"] li.menu-active {
@@ -6518,7 +6518,7 @@ span.product-title {
 
 #move-to-top {
     right: 30px;
-    bottom: 30px;
+    bottom: 152px;
 }
 
 #move-to-top:not(.filling) {
@@ -7262,6 +7262,9 @@ width:auto;
 header .taiowc-cart-item{
     max-height: 49px;
 }
+.single-product .variations_form{
+    width: 100%;
+}
 @media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2)  and (orientation:landscape) {
     .thunk-product-hover {
         position: relative;
@@ -7947,16 +7950,26 @@ header .taiowc-cart-item{
         display: flow-root;
     }
 
-    .menu-category-list ul[data-menu-style="accordion"] > li > a > .arrow:before {
-        float: right;
-        content: "\f105";
-        font-family: FontAwesome;
+    .theme-open-shop .menu-category-list ul[data-menu-style="accordion"] > li > a > .arrow:before {
+        float: initial;
+        content: "\f107";
+        font-family: th-icon;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
     }
+   .theme-open-shop ul[data-menu-style="accordion"] li.menu-active > a > .arrow:before {
+    content: "\f106" !important;
+}
 
     .menu-category-list ul[data-menu-style="accordion"] span.arrow {
         position: absolute;
-        right: 10px;
-        width: 40px;
+                right: 10px;
+                width: 25px;
+                height: 20px;
+                top: 50%;
+                transform: translateY(-50%);
     }
 
     .menu-category-list ul[data-menu-style="vertical"] span.arrow {
@@ -8219,7 +8232,7 @@ header .taiowc-cart-item{
     .menu-category-list ul[data-menu-style="vertical"] {
         position: absolute;
         float: none;
-        width: 150px !important;
+        width: 58%!important;
     }
 
     .thunk-product-cat-list li a {
@@ -8496,7 +8509,6 @@ header .taiowc-cart-item{
         margin: 0 auto;
         display: block;
         font-size: 10px;
-        width: 74%;
     }
 
     .woocommerce .thunk-list-view ul.products .thunk-product-hover .add_to_cart_button, .woocommerce .thunk-list-view ul.products li.product a.button.product_type_grouped, .woocommerce .thunk-list-view .thunk-product-hover a.th-button {
@@ -8730,7 +8742,12 @@ header .taiowc-cart-item{
         min-width: 70px;
     }
 
-    .summary .yith-wcwl-add-button a, .summary .yith-wcwl-wishlistaddedbrowse a, .summary .yith-wcwl-wishlistexistsbrowse a, .woocommerce .entry-summary a.compare.button, .summary .woosw-btn, .summary .wooscp-btn {
+    .summary .yith-wcwl-add-button a, 
+    .summary .yith-wcwl-wishlistaddedbrowse a, 
+    .summary .yith-wcwl-wishlistexistsbrowse a, 
+    .woocommerce .entry-summary a.compare.button, 
+    .summary .woosw-btn, .summary .wooscp-btn,
+    .woocommerce .entry-summary a.th-product-compare-btn {
         height: 30px;
         line-height: 30px;
         width: 30px;
