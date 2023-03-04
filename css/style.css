@@ -7323,7 +7323,12 @@ header .taiowc-cart-item{
 }
 
 @media screen and (max-width:1024px) {
-
+.thunk-product-cat-list > li > ul.sub-menu li > a > .arrow:before{
+    content: "\f107";
+}
+.thunk-product-cat-list ul[data-menu-style="accordion"] ul.sub-menu li.menu-active > a > .arrow:before{
+    content: "\f106";
+}
     .thunk-icon .taiowc-content .taiowc-total, 
     .thunk-icon .taiowcp-content .taiowcp-total {
     margin-left: 0;

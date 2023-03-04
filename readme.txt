@@ -28,6 +28,8 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 * Th Icon added in category page.
 * Blank Template added.
 * Move To Top style improved.
+* Tags Added.
+* Menu Style improved.
 
 = 1.4.7 =
 * wp-block-latest-comments style improved.
@@ -225,6 +227,8 @@ Initial release
 * Th Icon added in category page.
 * Blank Template added.
 * Move To Top style improved.
+* Tags Added.
+* Menu Style improved.
 
 == Resources ==
  

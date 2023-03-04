@@ -123,13 +123,13 @@
 		          "slug": "light-background"
 		        },
 		        {
-		          "color": "#ffffff",
+		          "color": "#111",
 		          "name": "Heading Color",
 		          "slug": "heading"
 		        },
 		        {
 		          "slug": "bodytext",
-		          "color": "#111",
+		          "color": "#1c1d1e",
 		          "name": "Body Text"
 		        },
 		        {
