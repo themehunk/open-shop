@@ -435,13 +435,13 @@ if ( ! class_exists( 'Open_Shop_Woocommerce_Ext' ) ) :
         
         echo '<div class="thunk-list-grid-switcher">';
         if($viewshow == 'grid-view'){
-             echo '<a title="' . esc_attr__('Grid View', 'open-shop') . '" href="#" data-type="grid" class="thunk-grid-view selected"><i class="fa fa-th"></i></a>';
+             echo '<a title="' . esc_attr__('Grid View', 'open-shop') . '" href="#" data-type="grid" class="thunk-grid-view selected"><i class="th-icon th-icon-th-col"></i></a>';
 
-             echo '<a title="' . esc_attr__('List View', 'open-shop') . '" href="#" data-type="list" class="thunk-list-view"><i class="fa fa-bars"></i></a>';
+             echo '<a title="' . esc_attr__('List View', 'open-shop') . '" href="#" data-type="list" class="thunk-list-view"><i class="th-icon th-icon-th-list"></i></a>';
         }else{
-        	  echo '<a title="' . esc_attr__('Grid View', 'open-shop') . '" href="#" data-type="grid" class="thunk-grid-view"><i class="fa fa-th"></i></a>';
+        	  echo '<a title="' . esc_attr__('Grid View', 'open-shop') . '" href="#" data-type="grid" class="thunk-grid-view"><i class="th-icon th-icon-th-col"></i></a>';
 
-             echo '<a title="' . esc_attr__('List View', 'open-shop') . '" href="#" data-type="list" class="thunk-list-view selected"><i class="fa fa-bars"></i></a>';
+             echo '<a title="' . esc_attr__('List View', 'open-shop') . '" href="#" data-type="list" class="thunk-list-view selected"><i class="th-icon th-icon-th-list"></i></a>';
         }
 
         echo '</div>';
