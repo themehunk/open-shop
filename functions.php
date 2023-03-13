@@ -11,7 +11,7 @@
  * Theme functions and definitions
  */
 if ( ! function_exists( 'open_shop_setup' ) ) :
-define( 'OPEN_SHOP_THEME_VERSION','1.4.3');
+define( 'OPEN_SHOP_THEME_VERSION','1.4.9');
 define( 'OPEN_SHOP_THEME_DIR', get_template_directory() . '/' );
 define( 'OPEN_SHOP_THEME_URI', get_template_directory_uri() . '/' );
 define( 'OPEN_SHOP_THEME_SETTINGS', 'open-shop-settings' );
@@ -65,8 +65,13 @@ define( 'OPEN_SHOP_THEME_SETTINGS', 'open-shop-settings' );
 
         // Enqueue editor styles.
         add_editor_style( 'style-editor.css' );
+
+        add_editor_style( 'editor.css' );
         // Add support for responsive embedded content.
         add_theme_support( 'responsive-embeds' );
+
+        add_theme_support( 'custom-spacing' );
+
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
