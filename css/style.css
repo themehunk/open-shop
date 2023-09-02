@@ -2725,10 +2725,9 @@ img {
     margin: 0;
     font-size: 12px;
 }
-
 .woocommerce .thunk-woo-product-list span.onsale {
     border-radius: 0px;
-    right: 0;
+    right: 5px;
     top: 0;
     left: auto;
     padding: 5px 10px;
@@ -2738,12 +2737,10 @@ img {
     background-color: #141415;
     margin: 0;
 }
-
 .woocommerce ul.products li.product .onsale, .woocommerce .thunk-woo-product-list span.onsale {
     font-family: "Roboto-Bold", sans-serif;
     margin: 0;
 }
-
 .thunk-product-image {
     display: block;
     position: relative;
@@ -2752,7 +2749,6 @@ img {
     margin-bottom: 5px;
     border-radius: 4px 4px 0 0;
 }
-
 .thunk-quickview {
     position: absolute;
     top: 50%;
@@ -2760,17 +2756,14 @@ img {
     left: 0;
     right: 0;
 }
-
 .woocommerce .thunk-woo-product-list .price {
     font-size: 12px;
     color: #ff0052;
 }
-
 .woocommerce .thunk-woo-product-list .price del {
     color: #8f9696;
     margin-right: 10px;
 }
-
 .thunk-woo-product-list .thunk-quickview a {
     color: #fff !important;
     font-size: 12px;
