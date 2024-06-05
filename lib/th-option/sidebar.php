@@ -6,14 +6,14 @@
             <p>
             <b><?php _e('Pre-made premium templates','open-shop'); ?> </b><br>
             <?php _e('If you like the free version of this theme, you will LOVE the full version of Open Shop which includes numerous  Advanced features, Custom Sections, Section Ordering and more useful options to customize your website.','open-shop'); ?> </p>
-                <center><a class="button ztabtn" target="_blank" href="https://themehunk.com/product/open-shop-pro/"><?php _e('Upgrade To Open Shop Premium','open-shop'); ?> </a></center>
+                <center><a class="button ztabtn" target="_blank" href="https://themehunk.com/product/open-shop-pro/"><?php _e('Upgrade To Pro','open-shop'); ?> </a></center>
             </div>
 
             <hr>
             <div class="section">
                 <h3><?php _e('Why Upgrade?','open-shop'); ?></h3>
                 <p><?php _e('Upgrading to Open Shop Premium you will unlock a dozen of unique features that will take your website to the next level. See in the  Comparison table for more details.','open-shop'); ?> </p>
-                 <center><a class="button button-primary" target="_blank" href="https://themehunk.com/product/open-shop-pro/#tabfix"><?php _e('View Open Shop Premium Demo','open-shop'); ?> </a></center>
+                 <center><a class="button button-primary" target="_blank" href="https://themehunk.com/product/open-shop-pro/#tabfix"><?php _e('View More Demo','open-shop'); ?> </a></center>
 
             </div>
 

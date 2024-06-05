@@ -3,8 +3,8 @@ Contributors: ThemeHunk
 Tags: wide-blocks, block-patterns, block-styles, editor-style, e-commerce, blog, grid-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-logo, custom-menu, add_editor_style, featured-image-header, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
 Requires at least: WordPress 4.7
 Requires PHP: 5.6
-Tested up to: 6.3
-Stable tag: 1.5.0
+Tested up to: 6.5
+Stable tag: 1.5.1
 License: GPLv3 or later
 License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -22,6 +22,13 @@ Yes our theme supports builder
 Yes, this theme is tested with latest version of WordPress, you can use it for your site.
 
 == Changelog ==
+
+= 1.5.1 =
+* Update: New import feature added.
+* Update : New Demo added.
+* Update : X share button improve.
+* Update : Dashbord button text and style change.
+* Remove : Extra plugin install removed.
 
 = 1.5.0 =
 * Theme tested with WordPress 6.3

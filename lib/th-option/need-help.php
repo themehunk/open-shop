@@ -6,6 +6,16 @@
     </p>
 </div>
 
+<div class="theme_link">
+    <h3><?php _e('Share','open-shop'); ?></h3>
+    <p> <?php _e('Love using this theme? Spread the word and let the world know you’ve crafted an awesome website for your store! Share your experience and showcase your stunning online presence to inspire others.','open-shop');?></p> 
+
+    <a href="https://twitter.com/intent/tweet?url=https://themehunk.com/product/open-shop-ecommerce-theme/&text=Hey, I am using this awesome WooCommerce Theme for WordPress and created a beautiful store website for <?php echo esc_url(home_url()); ?> . You can also check out this awesome theme: Open Shop By 
+@ThemeHunk %20%23WooCommerce%20%23WordPress" target="_blank" rel="external noreferrer noopener" class="x-gropup is-link">
+        <span class="x-image"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/lib/th-option/assets/images/x.png" /></span>
+        <span><?php _e(' Click to Tweet','open-shop'); ?></span></a>
+</div>
+
 
 <div class="theme_link">
     <h3><?php _e('Create a child theme','open-shop'); ?></h3>
@@ -27,10 +37,3 @@
 
 
 
-<div class="theme_link">
-    <h3><?php _e('Join Group','open-shop'); ?></h3>
-    <p> <?php _e('Join the community of friendly ThemeHunk users. Get connected, share opinion, ask questions and help each other !','open-shop');?></p> 
-
-    <a href="https://www.facebook.com/groups/themehunk" target="_blank" rel="external noreferrer noopener" class="facebook-gropup is-link"><span class="dashicon dashicons dashicons-facebook-alt"></span><span>
-        <?php _e(' Join our Facebook Group','open-shop'); ?></span></a>
-</div>

@@ -311,6 +311,29 @@ display: flex;
     height: 0;
 }
 
+/* share X link */
+.x-gropup .x-image img{
+    width: 50px;
+    }
+    .x-gropup{
+        display: flex;
+        align-items: center;
+        background-color: #2a2929;
+        padding: 2px 0px 1px 12px;
+        margin: 20px 0 0 !important;
+        color: #fff;
+        line-height: normal;
+        text-decoration: none;
+        box-shadow: 0 0 0 0 #3b5998;
+        transition: .3s ease;
+        border-radius: 58px;
+        width: 32%;
+    }
+    .x-gropup:hover ,.x-gropup:active,.x-gropup:focus{
+    color:#fff;
+    background-color: #000000;
+    }
+
 
 /*table conent css*/
 .th-buy-pro{

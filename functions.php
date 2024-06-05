@@ -11,7 +11,7 @@
  * Theme functions and definitions
  */
 if ( ! function_exists( 'open_shop_setup' ) ) :
-define( 'OPEN_SHOP_THEME_VERSION','1.4.9');
+define( 'OPEN_SHOP_THEME_VERSION','1.5.1');
 define( 'OPEN_SHOP_THEME_DIR', get_template_directory() . '/' );
 define( 'OPEN_SHOP_THEME_URI', get_template_directory_uri() . '/' );
 define( 'OPEN_SHOP_THEME_SETTINGS', 'open-shop-settings' );
@@ -133,13 +133,13 @@ define( 'OPEN_SHOP_THEME_SETTINGS', 'open-shop-settings' );
 
             'th-all-in-one-woo-cart' => array(
                  'name' => esc_html__( 'Th All In One Woo Cart', 'open-shop' ),
-                  'img' => 'icon-128x128.png',
+                  'img' => 'icon-128x128.gif',
                  'active_filename' => 'th-all-in-one-woo-cart/th-all-in-one-woo-cart.php',
              ),
             
             'th-product-compare' => array(
                  'name' => esc_html__( 'Th Product Compare', 'open-shop' ),
-                  'img' => 'icon-128x128.png',
+                  'img' => 'icon-128x128.gif',
                  'active_filename' => 'th-product-compare/th-product-compare.php',
              ),
 
@@ -153,20 +153,19 @@ define( 'OPEN_SHOP_THEME_SETTINGS', 'open-shop-settings' );
                  'img' => 'icon-128x128.png',
                 'active_filename' => 'lead-form-builder/lead-form-builder.php',
             ),
-            'wp-popup-builder' => array(
-                'name' => esc_html__( 'WP Popup Builder – Popup Forms & Newsletter', 'open-shop' ),
-                 'img' => 'icon-128x128.png',
-                'active_filename' => 'wp-popup-builder/wp-popup-builder.php',
-            ), 
-			
-			'unlimited-blocks' => array(
-				'name' => esc_html__( 'Unlimited blocks For Gutenberg', 'open-shop' ),
+			'vayu-blocks' => array(
+				'name' => esc_html__( 'Vayu blocks For Gutenberg', 'open-shop' ),
 				'img' => 'icon-128x128.png',
-				'active_filename' => 'unlimited-blocks/unlimited-blocks.php',
+				'active_filename' => 'vayu-blocks/vayu-blocks.php',
 				),
+				'wp-popup-builder' => array(
+					'name' => esc_html__( 'WP Popup Builder – Popup Forms & Newsletter', 'open-shop' ),
+					 'img' => 'icon-128x128.png',
+					'active_filename' => 'wp-popup-builder/wp-popup-builder.php',
+				), 
             'woocommerce' => array(
                 'name' => esc_html__( 'Woocommerce', 'open-shop' ),
-                 'img' => 'icon-128x128.png',
+                 'img' => 'icon-128x128.gif',
                 'active_filename' => 'woocommerce/woocommerce.php',
             ),
 
@@ -192,31 +191,7 @@ define( 'OPEN_SHOP_THEME_SETTINGS', 'open-shop-settings' );
                 'name' => esc_html__( 'Hunk Companion', 'open-shop' ),
                 'img' => 'icon-128x128.png',
                 'active_filename' => 'hunk-companion/hunk-companion.php',
-            ),
-
-            'one-click-demo-import' => array(
-                'name' => esc_html__( 'One Click Demo Import', 'open-shop' ),
-                'img' => 'icon-128x128.png',
-                'active_filename' => 'one-click-demo-import/one-click-demo-import.php',
-            ), 
-            'woocommerce' => array(
-                'name' => esc_html__( 'Woocommerce', 'open-shop' ),
-                'img' => 'icon-128x128.png',
-                'active_filename' => 'woocommerce/woocommerce.php',
-            ),
-            'th-advance-product-search' => array(
-            'name' => esc_html__( 'TH Advance Product Search', 'open-shop' ),
-            'img' => 'icon-128x128.gif',
-            'active_filename' => 'th-advance-product-search/th-advance-product-search.php',
-            ),
-
-            'th-all-in-one-woo-cart' => array(
-                 'name' => esc_html__( 'TH All In One Woo Cart', 'open-shop' ),
-                  'img' => 'icon-128x128.png',
-                 'active_filename' => 'th-all-in-one-woo-cart/th-all-in-one-woo-cart.php',
-             ),
-
-
+            )
         ));
 
 
