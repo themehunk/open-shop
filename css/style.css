@@ -871,9 +871,11 @@ header {
 .elementor-template-full-width .menu-category-list ul[data-menu-style="vertical"]{
     position: absolute;
     float: none;
-    width: 240px;
+    width: 247px;
     z-index: 999;
     display: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 .page-content .primary-content-area {
