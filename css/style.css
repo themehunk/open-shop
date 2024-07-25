@@ -867,7 +867,8 @@ header {
     float: left;
 }
 
-.no-sidebar .menu-category-list ul[data-menu-style="vertical"] {
+.no-sidebar .menu-category-list ul[data-menu-style="vertical"],
+.elementor-template-full-width .menu-category-list ul[data-menu-style="vertical"]{
     position: absolute;
     float: none;
     width: 240px;

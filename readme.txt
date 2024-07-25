@@ -25,6 +25,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
 = 1.5.3 =
 * Update: New Theme.json version 3 added.
+* Update: Elementor full width category and page layout issue resolved.
 
 = 1.5.2 =
 * Update: compatible with wordpress 6.6 .
@@ -243,6 +244,7 @@ Initial release
 == Upgrade Notice ==
 = 1.5.3 =
 * Update: New Theme.json version 3 added.
+* Update: Elementor full width category and page layout issue resolved.
 
 == Resources ==
  
