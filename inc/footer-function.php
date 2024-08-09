@@ -348,8 +348,8 @@ function open_shop_below_footer_markup(){ ?>
               <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
               <span class="powered-by-wordpress">
               <span><?php _e( 'Designed by', 'open-shop' ); ?></span>
-              <a href="<?php echo esc_url( __( 'https://themehunk.com/', 'open-shop' ) ); ?>" target="_blank">
-                <?php _e( 'Themehunk', 'open-shop' ); ?>
+              <a href="<?php echo esc_url( __( 'https://themehunk.com/', 'open-shop' ) ); ?>" target="_blank" rel="nofollow noopener">
+                <?php _e( 'Themehunk WordPress Theme', 'open-shop' ); ?>
               </a>
             </span>
             </p><!-- .footer-copyright -->
