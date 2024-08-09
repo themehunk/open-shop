@@ -41,8 +41,15 @@ get_template_part('inc/woocommerce/woocommerce-ajax');
 
 //Th Option
 get_template_part( '/lib/th-option/th-option');
-get_template_part( '/lib/th-option/notify');
 
 // Probutton
 /******************************/
 get_template_part('customizer/pro-button/class-customize');
+
+/******************************/
+// Plugin Activation
+/******************************/
+get_template_part( 'lib/notification/notify');
+if (is_customize_preview()) {
+get_template_part('lib/notification/customizer-notification/thsm-custom-section');
+}
