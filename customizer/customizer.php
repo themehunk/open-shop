@@ -36,6 +36,3 @@ if ( class_exists('Open_Shop_Customize_Control_Scroll')){
   }
 }
 add_action('customize_register','open_shop_customize_register');
-function open_shop_is_json( $string ){
-    return is_string( $string ) && is_array( json_decode( $string, true ) ) ? true : false;
-}

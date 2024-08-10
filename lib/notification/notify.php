@@ -46,6 +46,21 @@ class OpenShopAdminNotice {
     }
 
     public function display_admin_notice() {
+        $allowed_pages = array(
+        'dashboard',             // index.php
+        'themes',                // themes.php
+        'plugins',               // plugins.php
+        'users',
+        'appearance_page_thunk_started' // appearance_page_thunk_started
+    );
+
+    // Get the current screen
+    $current_screen = get_current_screen();
+
+    // Check if the current screen is one of the allowed pages
+    if (!in_array($current_screen->base, $allowed_pages)) {
+        return; // Exit if not on an allowed page
+    }
         global $current_user;
         $user_id = $current_user->ID;
         $theme_data = wp_get_theme();
@@ -195,6 +210,7 @@ class OpenShopAdminNotice {
             'index.php',
             'themes.php',
             'plugins.php',
+            'users.php',
             'appearance_page_thunk_started'
         );
 
