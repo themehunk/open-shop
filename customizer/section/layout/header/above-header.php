@@ -12,7 +12,7 @@ $wp_customize->add_setting( 'open_shop_above_mobile_disable', array(
                 'sanitize_callback'     => 'open_shop_sanitize_checkbox',
             ) );
 $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'open_shop_above_mobile_disable', array(
-                'label'                 => esc_html__('Disable in mobile', 'open-shop'),
+                'label'                 => esc_html__('Disable in mobile (Pro)', 'open-shop'),
                 'type'                  => 'checkbox',
                 'section'               => 'open-shop-above-header',
                 'settings'              => 'open_shop_above_mobile_disable',

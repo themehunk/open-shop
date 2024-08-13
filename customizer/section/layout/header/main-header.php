@@ -178,7 +178,7 @@ $wp_customize->add_control( new Open_Shop_Customizer_Buttonset_Control( $wp_cust
     'sanitize_callback' => 'open_shop_sanitize_checkbox',
   ) );
   $wp_customize->add_control( new Open_Shop_Toggle_Control( $wp_customize, 'open_shop_sticky_header', array(
-    'label'       => esc_html__( 'Sticky Header', 'open-shop' ),
+    'label'       => esc_html__( 'Sticky Header (Pro)', 'open-shop' ),
     'section'     => 'open-shop-main-header',
     'type'        => 'toggle',
     'settings'    => 'open_shop_sticky_header',
@@ -191,7 +191,7 @@ $wp_customize->add_setting( 'open_shop_whislist_mobile_disable', array(
                 'sanitize_callback'     => 'open_shop_sanitize_checkbox',
             ) );
 $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'open_shop_whislist_mobile_disable', array(
-                'label'                 => esc_html__('Check to disable Wishlist icon in mobile device', 'open-shop'),
+                'label'                 => esc_html__('Check to disable Wishlist icon in mobile device (Pro)', 'open-shop'),
                 'type'                  => 'checkbox',
                 'section'               => 'open-shop-main-header',
                 'settings'              => 'open_shop_whislist_mobile_disable',
@@ -203,7 +203,7 @@ $wp_customize->add_setting( 'open_shop_account_mobile_disable', array(
                 'sanitize_callback'     => 'open_shop_sanitize_checkbox',
             ) );
 $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'open_shop_account_mobile_disable', array(
-                'label'                 => esc_html__('Check to disable account icon in mobile device', 'open-shop'),
+                'label'                 => esc_html__('Check to disable account icon in mobile device (Pro)', 'open-shop'),
                 'type'                  => 'checkbox',
                 'section'               => 'open-shop-main-header',
                 'settings'              => 'open_shop_account_mobile_disable',
@@ -215,7 +215,7 @@ $wp_customize->add_setting( 'open_shop_cart_mobile_disable', array(
                 'sanitize_callback'     => 'open_shop_sanitize_checkbox',
             ) );
 $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'open_shop_cart_mobile_disable', array(
-                'label'                 => esc_html__('Check to disable cart icon in mobile device', 'open-shop'),
+                'label'                 => esc_html__('Check to disable cart icon in mobile device (Pro)', 'open-shop'),
                 'type'                  => 'checkbox',
                 'section'               => 'open-shop-main-header',
                 'settings'              => 'open_shop_cart_mobile_disable',
