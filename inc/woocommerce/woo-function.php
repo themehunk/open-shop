@@ -327,8 +327,59 @@ function open_shop_not_a_shop_page() {
 //***********************/
 // product category list
 //************************/
-function open_shop_product_list_categories( $args = '' ){
+// function open_shop_product_list_categories( $args = '' ){
+//     $defaults = array(
+//         'child_of'            => 0,
+//         'current_category'    => 0,
+//         'depth'               => 5,
+//         'echo'                => 0,
+//         'exclude'             => '',
+//         'exclude_tree'        => '',
+//         'feed'                => '',
+//         'feed_image'          => '',
+//         'feed_type'           => '',
+//         'hide_empty'          => 1,
+//         'hide_title_if_empty' => false,
+//         'hierarchical'        => true,
+//         'order'               => 'ASC',
+//         'orderby'             => 'menu_order',
+//         'separator'           => '<br />',
+//         'show_count'          => 0,
+//         'show_option_all'     => '',
+//         'show_option_none'    => __( 'No categories','open-shop' ),
+//         'style'               => 'list',
+//         'taxonomy'            => 'product_cat',
+//         'title_li'            => '',
+//         'use_desc_for_title'  => 0,
+//     );
+//  $html = wp_list_categories($defaults);
+//         echo '<ul class="product-cat-list thunk-product-cat-list" data-menu-style="vertical">'.$html.'</ul>';
+//   }
+
+function open_shop_product_list_categories( $args = '' ) {
+    // Get the list of category slugs from the theme mod
+    $include_slugs = get_theme_mod('open_shop_header_category_list');
+
+    // Initialize an empty array to store category IDs
+    $include_ids = array();
+
+    // Check if the slugs array is not empty
+    if ( ! empty( $include_slugs ) && is_array( $include_slugs ) ) {
+        // Loop through each slug and get the corresponding category ID
+        foreach ( $include_slugs as $slug ) {
+            $term = get_term_by( 'slug', $slug, 'product_cat' );
+            if ( $term && ! is_wp_error( $term ) ) {
+                $include_ids[] = $term->term_id;
+            }
+        }
+    }
+
+    // Convert the array of IDs to a comma-separated list
+    $include_ids = implode( ',', $include_ids );
+
+    // Set up the default arguments for wp_list_categories
     $defaults = array(
+        'include'             => $include_ids,  // Use the IDs we've just generated
         'child_of'            => 0,
         'current_category'    => 0,
         'depth'               => 5,
@@ -346,15 +397,23 @@ function open_shop_product_list_categories( $args = '' ){
         'separator'           => '<br />',
         'show_count'          => 0,
         'show_option_all'     => '',
-        'show_option_none'    => __( 'No categories','open-shop' ),
+        'show_option_none'    => __( 'No categories', 'open-shop' ),
         'style'               => 'list',
         'taxonomy'            => 'product_cat',
         'title_li'            => '',
         'use_desc_for_title'  => 0,
     );
- $html = wp_list_categories($defaults);
-        echo '<ul class="product-cat-list thunk-product-cat-list" data-menu-style="vertical">'.$html.'</ul>';
-  }
+
+    // Merge any additional arguments passed to the function
+    $args = wp_parse_args( $args, $defaults );
+
+    // Get the categories list
+    $html = wp_list_categories( $args );
+
+    // Output the categories list
+    echo '<ul class="product-cat-list thunk-product-cat-list" data-menu-style="vertical">' . $html . '</ul>';
+}
+
 
 
 /*****************************/

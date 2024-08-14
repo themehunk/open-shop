@@ -42,7 +42,7 @@
 	);
 	// read more text
     $wp_customize->add_setting('open_shop_blog_read_more_txt', array(
-			'default'           =>'Read More (Pro)',
+			'default'           =>'Read More',
             'capability'        => 'edit_theme_options',
 			'sanitize_callback' =>'open_shop_sanitize_text',
             'transport'         => 'postMessage',
@@ -51,7 +51,7 @@
 	$wp_customize->add_control('open_shop_blog_read_more_txt', array(
 			'type'        => 'text',
 			'section'     => 'open-shop-section-blog-group',
-			'label'       => __( 'Read More Text', 'open-shop' ),
+			'label'       => __( 'Read More Text (Pro)', 'open-shop' ),
 			'settings' => 'open_shop_blog_read_more_txt',
              'priority'   =>11,
 			

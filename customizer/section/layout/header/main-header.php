@@ -37,6 +37,35 @@ $wp_customize->add_control(
             )
         );
 } 
+
+$wp_customize->add_setting('open_shop_main_hdr_cat_txt', array(
+        'default' => __('Category','open-shop'),
+        'capability'        => 'edit_theme_options',
+        'sanitize_callback' => 'open_shop_sanitize_text',
+        'transport'         => 'postMessage',
+));
+$wp_customize->add_control( 'open_shop_main_hdr_cat_txt', array(
+        'label'    => __('Category Text', 'open-shop'),
+        'section'  => 'open-shop-main-header',
+         'type'    => 'text',
+));
+
+//= Choose All Category  =   
+    if (class_exists( 'Open_Shop_Customize_Control_Checkbox_Multiple')) {
+   $wp_customize->add_setting('open_shop_header_category_list', array(
+        'default'           => '',
+        'sanitize_callback' => 'open_shop_checkbox_explode'
+    ));
+    $wp_customize->add_control(new Open_Shop_Customize_Control_Checkbox_Multiple(
+            $wp_customize,'open_shop_header_category_list', array(
+        'settings'=> 'open_shop_header_category_list',
+        'label'   => __( 'Choose Categories To Show', 'open-shop' ),
+        'section' => 'open-shop-main-header',
+        'choices' => open_shop_get_category_list(array('taxonomy' =>'product_cat'),false),
+        ) 
+    ));
+
+}
 /***********************************/  
 // menu alignment
 /***********************************/ 

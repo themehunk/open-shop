@@ -61,11 +61,11 @@ $wp_customize->add_control( 'open_shop_above_header_col1_set', array(
         'section' => 'open-shop-above-header',
         'type'    => 'select',
         'choices'    => array(
-        'none'       => __('None','open-shop'),
+        'none'       => __('None (Pro)','open-shop'),
         'text'       => __('Text','open-shop'),
-        'menu'       => __('Menu','open-shop'),
-        'widget'     => __('Widget','open-shop'),
-        'social'     => __('Social Media','open-shop'),
+        'menu'       => __('Menu (Pro)','open-shop'),
+        'widget'     => __('Widget (Pro)','open-shop'),
+        'social'     => __('Social Media (Pro)','open-shop'),
             
         ),
     ));
@@ -146,11 +146,11 @@ $wp_customize->add_control( 'open_shop_above_header_col2_set', array(
         'section' => 'open-shop-above-header',
         'type'    => 'select',
         'choices'    => array(
-        'none'                 => __('None','open-shop'),
+        'none'                 => __('None (Pro)','open-shop'),
         'text'             => __('Text','open-shop'),
-        'menu'                 => __('Menu','open-shop'),
-        'widget'                 => __('Widget','open-shop'),
-        'social'             => __('Social Media','open-shop'),
+        'menu'                 => __('Menu (Pro)','open-shop'),
+        'widget'                 => __('Widget (Pro)','open-shop'),
+        'social'             => __('Social Media (Pro)','open-shop'),
             
         ),
     ));

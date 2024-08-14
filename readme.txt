@@ -4,7 +4,7 @@ Tags: wide-blocks, block-patterns, block-styles, editor-style, e-commerce, blog,
 Requires at least: WordPress 4.7
 Requires PHP: 5.6
 Tested up to: 6.6
-Stable tag: 1.5.5
+Stable tag: 1.5.6
 License: GPLv3 or later
 License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -22,6 +22,10 @@ Yes our theme supports builder
 Yes, this theme is tested with latest version of WordPress, you can use it for your site.
 
 == Changelog ==
+
+= 1.5.6 =
+* New: Theme limitation edition added.
+* New: Header categories to include added.
 
 = 1.5.5 =
 * Fix : open_shop_is_json issue resolved.
@@ -249,8 +253,9 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 Initial release
 
 == Upgrade Notice ==
-* Fix : open_shop_is_json issue resolved.
-* Update: Banner display conditional added.
+= 1.5.6 =
+* New: Theme limitation edition added.
+* New: Header categories to include added.
 
 == Resources ==
  

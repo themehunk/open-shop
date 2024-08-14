@@ -214,6 +214,7 @@ if ( ! function_exists( 'open_shop_below_header_markup' ) ){
 function open_shop_below_header_markup(){ 
 $open_shop_menu_alignment = get_theme_mod('open_shop_menu_alignment','center');
 $open_shop_menu_open = get_theme_mod('open_shop_mobile_menu_open','left');
+$categoryText = get_theme_mod('open_shop_main_hdr_cat_txt','Category');
 ?> 
 <div class="below-header  mhdrdefault  <?php echo esc_attr($open_shop_menu_alignment);?>">
 			<div class="container">
@@ -227,7 +228,7 @@ $open_shop_menu_open = get_theme_mod('open_shop_mobile_menu_open','left');
                        <span class="cat-top"></span>
                        <span class="cat-bot"></span>
                      </span>
-						  	  	<span class="toggle-title"><?php _e('Category','open-shop');?></span>
+						  	  	<span class="toggle-title"><?php echo esc_html($categoryText); ?></span>
 						  	  	<span class="toggle-icon"></span>
 						  	  </div>
 						  </div>
