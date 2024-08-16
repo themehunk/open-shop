@@ -63,6 +63,7 @@ jQuery('#customize-control-open_shop_header_category_list li input').attr("disab
 jQuery('#customize-control-open_shop_header_category_list li:nth-of-type(1) input,#customize-control-open_shop_header_category_list li:nth-of-type(2) input,#customize-control-open_shop_header_category_list li:nth-of-type(3) input,#customize-control-open_shop_header_category_list li:nth-of-type(4) input,#customize-control-open_shop_header_category_list li:nth-of-type(5) input').attr("disabled",false);
 
 jQuery('#_customize-input-open_shop_product_slider_cat option,#_customize-input-open_shop_product_list_cata option').attr("disabled",true);
+jQuery('#_customize-input-open_shop_product_slider_cat option:nth-of-type(1),#_customize-input-open_shop_product_list_cata option:nth-of-type(1)').attr("disabled",false);
 jQuery('input[id=open_shop_banner_layout-bnr-one]').attr("disabled",true);
 
 
@@ -73,7 +74,7 @@ jQuery('#customize-control-open_shop_shadow_header input,#customize-control-open
 jQuery('#customize-control-open_shop_top_slide_content .button.add_field,#customize-control-open_shop_highlight_content .button.add_field').remove();
 jQuery('#customize-control-open_shop_top_slide_content,#customize-control-open_shop_highlight_content').append("<h4>(To Add More Slides Feature Available In Pro Version)</h4>");
 
-jQuery('#customize-control-open_shop_header_category_list').append("<h4>(To Add More Feature Available In Pro Version)</h4>");
+jQuery('#customize-control-open_shop_header_category_list,#customize-control-open_shop_product_slider_cat,#customize-control-open_shop_product_list_cata').append("<h4>(To Select More Feature Available In Pro Version)</h4>");
 
 });
 
