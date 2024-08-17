@@ -20,6 +20,17 @@ function open_shop_custom_logo(){
 }
 endif;
 
+if(!function_exists('open_shop_get_category_list')){
+function open_shop_get_category_list($arr='',$all=true){
+    $cats = array();
+    foreach ( get_categories($arr) as $categories => $category ){
+       
+        $cats[$category->slug] = $category->name;
+     }
+     return $cats;
+  }
+}
+
 function open_shop_is_json( $string ){
     return is_string( $string ) && is_array( json_decode( $string, true ) ) ? true : false;
 }

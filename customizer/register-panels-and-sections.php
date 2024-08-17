@@ -120,7 +120,7 @@ $wp_customize->add_section($open_shop_rtl);
     'sanitize_callback' => 'open_shop_sanitize_checkbox',
   ) );
   $wp_customize->add_control( new Open_Shop_Toggle_Control( $wp_customize, 'open_shop_rtl', array(
-    'label'       => esc_html__( 'Enable', 'open-shop' ),
+    'label'       => esc_html__( 'Enable (Pro)', 'open-shop' ),
     'section'     => 'open-shop-rtl',
     'type'        => 'toggle',
     'settings'    => 'open_shop_rtl',

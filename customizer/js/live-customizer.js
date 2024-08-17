@@ -304,6 +304,11 @@ wp.customize(
 /***************/
 // MAIN HEADER
 /***************/
+wp.customize('open_shop_main_hdr_cat_txt', function(value){
+         value.bind(function(to){
+             $('.menu-category-list .toggle-title').text(to);
+         });
+});
 wp.customize('open_shop_main_hdr_btn_txt', function(value){
          value.bind(function(to){
              $('.btn-main-header').text(to);

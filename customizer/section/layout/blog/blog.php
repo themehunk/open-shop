@@ -15,9 +15,9 @@
         'section' => 'open-shop-section-blog-group',
         'type'    => 'select',
         'choices'    => array(
-        'full'   => __('Full Content','open-shop'),
+        'full'   => __('Full Content (Pro)','open-shop'),
         'excerpt' => __('Excerpt Content','open-shop'), 
-        'nocontent' => __('No Content','open-shop'), 
+        'nocontent' => __('No Content (Pro)','open-shop'), 
         ),
          'priority'   =>9,
     ));
@@ -31,7 +31,7 @@
 	$wp_customize->add_control('open_shop_blog_expt_length', array(
 			'type'        => 'number',
 			'section'     => 'open-shop-section-blog-group',
-			'label'       => __( 'Excerpt Length', 'open-shop' ),
+			'label'       => __( 'Excerpt Length (Pro)', 'open-shop' ),
 			'input_attrs' => array(
 				'min'  => 0,
 				'step' => 1,
@@ -51,7 +51,7 @@
 	$wp_customize->add_control('open_shop_blog_read_more_txt', array(
 			'type'        => 'text',
 			'section'     => 'open-shop-section-blog-group',
-			'label'       => __( 'Read More Text', 'open-shop' ),
+			'label'       => __( 'Read More Text (Pro)', 'open-shop' ),
 			'settings' => 'open_shop_blog_read_more_txt',
              'priority'   =>11,
 			
