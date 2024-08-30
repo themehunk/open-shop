@@ -19,7 +19,11 @@ get_header();?>
                 ?>
         					</div>  <!-- end primary-content-wrap-->
         				</div>  <!-- end primary primary-content-area-->
-        				<?php get_sidebar(); ?><!-- end sidebar-primary  sidebar-content-area-->
+        				<?php 
+                if(get_post_meta(get_the_ID(), 'open_shop_disable_page_sidebar', true )!=='on'):
+                get_sidebar();
+                endif;
+                 ?><!-- end sidebar-primary  sidebar-content-area-->
         			</div> <!-- end main-area -->
         		</div>
         	</div> <!-- end content-wrap -->
