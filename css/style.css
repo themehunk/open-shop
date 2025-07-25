@@ -5002,7 +5002,7 @@ input[type="text"], input[type="email"], input[type="url"], textarea, input[type
 }
 
 .woocommerce-checkout .thunk-content-wrap {
-    display: -webkit-flex;
+    overflow: hidden;
 }
 
 .woocommerce #order_review table.shop_table thead th {
