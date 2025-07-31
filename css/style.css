@@ -2851,6 +2851,11 @@ img {
     display: inline-flex;
     margin-top: 10px;
 }
+.theme-open-shop.single-product .thunk-compare{
+    width: auto;
+    display: inline-flex;
+    margin-top: 0;
+}
 
 .thunk-wishlist a, .thunk-compare a {
     font-size: 12px;
