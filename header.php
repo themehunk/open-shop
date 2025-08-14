@@ -59,7 +59,8 @@ if(!is_404() && !is_search() && is_page()){
 ?>
 <?php do_action('open_shop_site_preloader'); ?>
 <div id="page" class="openshop-site  <?php echo esc_attr($classes);?>">
-	<header>
+	 <?php do_action( 'open_shop_before_header' ); ?>
+	<header class="open-shop-header">
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'open-shop' ); ?></a>
 		<?php do_action( 'open_shop_sticky_header' ); ?> 
         <!-- sticky header -->
@@ -76,3 +77,4 @@ if(!is_404() && !is_search() && is_page()){
 		<?php if ( class_exists( 'WooCommerce' ) ){ do_action( 'open_shop_below_header' );} ?> 
 		<!-- end below-header -->
 	</header> <!-- end header -->
+	 <?php do_action( 'open_shop_after_header' ); ?>
