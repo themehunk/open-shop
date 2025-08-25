@@ -34,3 +34,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
   font-weight: normal;
   font-style: normal;
 }
+
+/*.thunk-wishlist .thw-add-to-wishlist-button *{
+  font-size: inherit!important;
+  line-height: inherit!important;
+}*/
