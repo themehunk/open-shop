@@ -2889,7 +2889,7 @@ img {
     color: #1c1d1e;
 }
 
-.open-shop-wishlist-activate .thunk-product-wrap .thunk-compare::before {
+.open-shop-wishlist-activate .thunk-product .thunk-compare::before {
     color: #c8c8c8;
     content: "|";
     display: inline-block;
