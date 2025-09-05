@@ -237,14 +237,13 @@ add_action( 'woocommerce_after_single_product_summary', 'open_shop_single_summar
 /**********************/
 
 function open_shop_add_to_compare_fltr($pid){ 
-  if(class_exists('th_product_compare') || class_exists('Tpcp_product_compare')){
-    global $product;
-    $pid = $product->get_id();
-    echo'<div class="thunk-compare"><span class="compare-list"><div class="woocommerce product compare-button">
-          <a class="th-product-compare-btn compare" data-th-product-id="'.esc_attr($pid).'">'.__('Compare','open-shop').'</a>
-          </div></span></div>';
-
-           }
+  global $product;
+  $pid = $product->get_id();
+  if( shortcode_exists('th_compare')){ ?>
+   
+      <?php echo do_shortcode('[th_compare pid="' . esc_attr($pid) . '"]'); ?>
+    
+          <?php  }
     }
 
 
@@ -255,18 +254,24 @@ function open_shop_add_to_compare_fltr($pid){
 /**********************/
 function open_shop_whish_list($pid){
        global $product;
-    $pid = $product->get_id();  
-     if( shortcode_exists( 'thwl_add_to_wishlist' )){
-        echo '<div class="thunk-wishlist"><span class="thunk-wishlist-inner">'. do_shortcode('[thwl_add_to_wishlist 
+   $pid = $product->get_id();  
+        if ( shortcode_exists( 'thwl_add_to_wishlist' ) ) { ?>
+            <div class="thunk-wishlist"><span class="thunk-wishlist-inner">
+              <?php echo do_shortcode('[thwl_add_to_wishlist 
                 product_id="' . esc_attr($pid) . '" 
                 add_icon="th-icon th-icon-heart1" 
                 add_text="Wishlist"
                 add_browse_icon="th-icon th-icon-favorite"
-                browse_text="Wishlisted"
+                browse_text="Added"
                 theme_style="yes"
                 custom_class="th-wishlist-integrated"
-              ]').'</span></div>';
-       }
+              ]'); ?>
+              </span></div>
+      <?php  }
+      elseif( shortcode_exists( 'yith_wcwl_add_to_wishlist' ) ){?>
+        <div class="thunk-wishlist"><span class="thunk-wishlist-inner"><?php echo do_shortcode('[yith_wcwl_add_to_wishlist  product_id='.esc_attr($pid).' icon="th-icon th-icon-favorite" label='.__('wishlist','openshop-pro').'
+         already_in_wishslist_text='.__('Already','openshop-pro').' browse_wishlist_text='.__('Added','openshop-pro').']' );?></span></div>
+      <?php  }
 
 
  }         
@@ -281,16 +286,6 @@ function open_shop_wpc_add_to_compare_fltr($pid){
            echo '<div class="thunk-compare"><span class="compare-list"><div class="woocommerce product compare-button">'.do_shortcode('[woosc id='.$pid.']').'</div></span></div>';
          }
      }
-
-/**********************/
-/** WPC WOOSW wishlist **/
-/**********************/
-
-function open_shop_wpc_whish_list($pid){
-    if( class_exists( 'WPCleverWoosw' ) ){
-      echo '<div class="thunk-wishlist"><span class="thunk-wishlist-inner">'.do_shortcode('[woosw id='.$pid.']').'</span></div>';
-     }
- }
 
 
 function open_shop_whishlist_url(){
