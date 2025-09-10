@@ -25,9 +25,9 @@
              if($('.header__cat__item.dropdown').length!==0){
              $this.cat_toggle();
              }
+             $this.checkIfScrollable();
         },
-        
-       
+
         sticky_header: function () {
  
                     var position = jQuery(window).scrollTop(); 
@@ -236,6 +236,31 @@
                         });
                      
                 },
+
+            checkIfScrollable: function() {
+              // Function to check if .thunk-product-cat-list has scrollable content
+              var catList = $('.thunk-product-cat-list')[0]; // Get the DOM element
+              var isScrollable = catList.scrollHeight > catList.clientHeight;
+
+             
+                $('.thunk-product-cat-list').on('mouseenter', 'li.cat-item', function () {
+                  const $li = $(this);
+
+                  // Check if this <li> or any of its children contain a .sub-menu
+                  const hasSubMenu = $li.find('.sub-menu').length > 0;
+
+                  if (isScrollable && hasSubMenu) {
+                    $('.thunk-product-cat-list').css('overflow-y', 'initial');
+                  }
+                });
+
+                $('.thunk-product-cat-list').on('mouseleave', 'li.cat-item', function () {
+                  if (isScrollable) {
+                    $('.thunk-product-cat-list').css('overflow-y', 'scroll');
+                  }
+                });
+     
+            },
                 
 }
   OpenShopLib.init();

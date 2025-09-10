@@ -25,6 +25,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
 = Version 1.6.6 =
 * Update: get_template_part removed by require_once.
+* Update: Category scroll issue resolved.
 
 = Version: 1.6.5 =
 1. Child theme Fatal error issue fixed 

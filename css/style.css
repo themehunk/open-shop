@@ -1726,9 +1726,17 @@ img {
     margin: 0;
     padding: 0; 
     max-height: 509px;
-    overflow-y: scroll;     
+    overflow-y: scroll; 
+     scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }
+
+.thunk-product-cat-list::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */    
+}
+
 /* WebKit-based browsers */
+/
 .thunk-product-cat-list::-webkit-scrollbar {
     width: 3px;
 }
