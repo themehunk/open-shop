@@ -370,7 +370,7 @@ function open_shop_main_header_optn(){
 if ( ! function_exists( 'open_shop_logo' ) ){
 function open_shop_logo(){
 $title_disable          = get_theme_mod( 'title_disable','enable');
-$tagline_disable        = get_theme_mod( 'tagline_disable','enable');
+$tagline_disable        = get_theme_mod( 'tagline_disable','');
 $description            = get_bloginfo( 'description', 'display' );
 open_shop_custom_logo(); 
 if($title_disable!='' || $tagline_disable!=''){
