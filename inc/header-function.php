@@ -406,11 +406,15 @@ $acc_icon = get_theme_mod('open_shop_account_mobile_disable',false);
       if($whs_icon == true){ 
        if (wp_is_mobile()!== true):
         ?>
-      <a class="whishlist" href="<?php echo esc_url( open_shop_whishlist_url() ); ?>"><i  class="th-icon th-icon-heartline" aria-hidden="true"></i></a>
+      <a class="whishlist" href="<?php echo esc_url( open_shop_whishlist_url() ); ?>" title="Show Wishlist"><i  class="th-icon th-icon-heartline" aria-hidden="true"></i>
+        <span class="th-whishlist-text tooltip"><?php _e('Wishlist','open-shop');?></span>
+      </a>
       
      <?php endif; }
      elseif($whs_icon == false){?>
-        <a class="whishlist" href="<?php echo esc_url( open_shop_whishlist_url() ); ?>"><i  class="th-icon th-icon-heartline" aria-hidden="true"></i></a>
+        <a class="whishlist" href="<?php echo esc_url( open_shop_whishlist_url() ); ?>"  title="Show Wishlist"><i  class="th-icon th-icon-heartline" aria-hidden="true"></i>
+        <span class="th-whishlist-text tooltip"><?php _e('Wishlist','open-shop');?></span>
+      </a>
     <?php  } }
 
 
