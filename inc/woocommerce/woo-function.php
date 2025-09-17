@@ -303,10 +303,10 @@ return $wishlist_permalink ;
 /** My Account Menu **/
 function open_shop_account(){
  if ( is_user_logged_in() ) {
-  $return = '<a class="account" href="'.esc_url(get_permalink( get_option('woocommerce_myaccount_page_id') )).'" title="Show Account"><i class="th-icon th-icon-user" aria-hidden="true"></i><span class="account-text tooltip">Account</span></a>';
+  $return = '<a class="account" href="'.esc_url(get_permalink( get_option('woocommerce_myaccount_page_id') )).'" title="Account"><i class="th-icon th-icon-user" aria-hidden="true"></i><span class="account-text tooltip">Account</span></a>';
   } 
  else {
-  $return = '<span><a href="'.esc_url(get_permalink( get_option('woocommerce_myaccount_page_id') )).'" title="Show Account"><i class="th-icon th-icon-user" aria-hidden="true"></i><span class="account-text tooltip">Account</span></a></span>';
+  $return = '<span><a href="'.esc_url(get_permalink( get_option('woocommerce_myaccount_page_id') )).'" title="Account"><i class="th-icon th-icon-user" aria-hidden="true"></i><span class="account-text tooltip">Account</span></a></span>';
 }
  echo $return;
 }
