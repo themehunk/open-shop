@@ -224,9 +224,11 @@ $categoryText = get_theme_mod('open_shop_main_hdr_cat_txt','Category');
 						  <div class="toggle-cat-wrap">
 						  	  <div class="cat-toggle">
                     <span class="cat-icon"> 
-                      <span class="cat-top"></span>
-                       <span class="cat-top"></span>
-                       <span class="cat-bot"></span>
+                      <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; vertical-align: middle;">
+  <path d="M5 7h14"></path>
+  <path d="M5 12h9"></path>
+  <path d="M5 17h11"></path>
+</svg>
                      </span>
 						  	  	<span class="toggle-title"><?php echo esc_html($categoryText); ?></span>
 						  	  	<span class="toggle-icon"></span>
@@ -406,13 +408,13 @@ $acc_icon = get_theme_mod('open_shop_account_mobile_disable',false);
       if($whs_icon == true){ 
        if (wp_is_mobile()!== true):
         ?>
-      <a class="whishlist" href="<?php echo esc_url( open_shop_whishlist_url() ); ?>" title="Wishlist"><i  class="th-icon th-icon-heartline" aria-hidden="true"></i>
+      <a class="whishlist" href="<?php echo esc_url( open_shop_whishlist_url() ); ?>" title="Wishlist"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart w-6 h-6 stroke-[1.5px]" aria-hidden="true"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path></svg>
         <span class="th-whishlist-text tooltip"><?php _e('Wishlist','open-shop');?></span>
       </a>
       
      <?php endif; }
      elseif($whs_icon == false){?>
-        <a class="whishlist" href="<?php echo esc_url( open_shop_whishlist_url() ); ?>"  title="Wishlist"><i  class="th-icon th-icon-heartline" aria-hidden="true"></i>
+        <a class="whishlist" href="<?php echo esc_url( open_shop_whishlist_url() ); ?>"  title="Wishlist"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart w-6 h-6 stroke-[1.5px]" aria-hidden="true"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path></svg>
         <span class="th-whishlist-text tooltip"><?php _e('Wishlist','open-shop');?></span>
       </a>
     <?php  } }
@@ -511,7 +513,7 @@ add_action('open_shop_site_preloader','open_shop_preloader');
                      <?php 
                     if( class_exists( 'THWL_Wishlist' ) || class_exists( 'YITH_WCWL' )){
                       ?>
-                      <a class="whishlist" href="<?php echo esc_url(open_shop_whishlist_url() ); ?>"><i  class="th-icon th-icon-heartline" aria-hidden="true"></i></a>
+                      <a class="whishlist" href="<?php echo esc_url(open_shop_whishlist_url() ); ?>"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart w-6 h-6 stroke-[1.5px]" aria-hidden="true"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path></svg></a>
                      <?php } 
                         open_shop_account();
                        ?>

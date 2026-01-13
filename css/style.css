@@ -2050,10 +2050,14 @@ img {
     border-radius: 4px;
     position: relative;
 }
-
+.header-icon a:hover{
+    color: #1c1d1e;
+}
 /*header-icon*/
 .header-icon a {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     float: left;
 }
@@ -2756,6 +2760,9 @@ img {
     color: #ff0052;
     margin: 0;
     font-size: 12px;
+}
+.thunk-product .th-wishlist-icon-svg{
+  width: 14px;
 }
 .woocommerce .thunk-woo-product-list span.onsale {
     border-radius: 0px;
@@ -6306,10 +6313,7 @@ section.thunk-ribbon-section .content-wrap {
     line-height: 35px;
     background: transparent!important;
 }
-.sticky-header-col3 .thunk-icon .taiowc-icon svg, 
-.sticky-header-col3 .thunk-icon .taiowc-icon img {
-    width: 1.1rem;
-}
+
 .sticky-header-col3 .thunk-icon .cart-icon a.cart-contents {
     position: relative;
     padding: 0;
@@ -7272,29 +7276,13 @@ text-decoration: underline !important;
 }*/
 /* All in one woo cart */
 .thunk-icon .taiowc-icon svg, .thunk-icon .taiowc-icon img {
-    width: 1.4rem;
-    fill: #fff;
+/*    width: 1.4rem;*/
 }
 
 .thunk-icon .cart-icon .taiowc-cart-item,.thunk-icon .taiowc-content .taiowc-total {
     background: transparent;
     color: #fff;
 }
-.thunk-icon .cart-count-item {
-    position: absolute;
-    background: #111;
-    height: 25px;
-    width: 25px;
-    line-height: 25px;
-    color: #fff;
-    text-align: center;
-    font-size: 0.69rem;
-    border-radius: 100%;
-    top: -18px;
-    left: -18px;
-    z-index: 1;
-}
-
 .cart-plugin-active-msg{
 display: table-cell;
     padding-top: 10px;
@@ -7325,20 +7313,11 @@ width:auto;
     padding: 0;
     line-height: normal;
 }
-.cart-icon .taiowc-content .taiowc-total, .thunk-icon .cart-icon .taiowcp-icon .th-icon, .thunk-icon .cart-icon .taiowcp-content .taiowcp-total, .thunk-icon .cart-icon .taiowc-icon .th-icon, .thunk-icon .cart-icon .taiowc-content .taiowcp-total {
-    color: #111;
-}
 .sticky-header-col3 .cart-icon .taiowc-content .taiowc-total, .sticky-header-col3 .thunk-icon .cart-icon .taiowc-content .taiowcp-total, .sticky-header-col3 .thunk-icon .cart-icon .taiowc-icon .th-icon, .sticky-header-col3 .thunk-icon .cart-icon .taiowcp-content .taiowcp-total, .sticky-header-col3 .thunk-icon .cart-icon .taiowcp-icon .th-icon {
     color: #111;
 }
-.sticky-header-col3 .cart-count-item {
-    top: -6px;
-    left: -18px;
-}
-.sticky-header-col3 .taiowc-content .cart-count-item {
-    top: -18px;
-    left: -18px
-}
+
+
 .sticky-header .header-icon a i, .sticky-header-col3 .thunk-icon .cart-icon a.cart-contents i {
     font-size: 18px;
 }
@@ -7439,6 +7418,13 @@ header .taiowc-cart-item{
 }
 .header-icon .tooltip{
     display: none;
+}
+.cat-toggle svg{
+    font-size: 21px;
+}
+header .cart-count-item{
+    top: 2px;
+    left: 25px;
 }
 @media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2)  and (orientation:landscape) {
     .thunk-product-hover {
@@ -7910,7 +7896,6 @@ header .taiowc-cart-item{
     }
       .thunk-wishlist a .thw-icon {
   font-size: 12px;
-  line-height: 25px;
 }
     .thunk-product .yith-wcwl-wishlistexistsbrowse:before, .thunk-product .yith-wcwl-wishlistaddedbrowse:before {
         margin: 0;
@@ -7919,7 +7904,8 @@ header .taiowc-cart-item{
     .thunk-wishlist a, .thunk-compare a,.thunk-compare .compare-button a {
         font-size: 0;
         margin: 0;
-        display: inline-block;
+        display: inline-flex;
+        gap: 2px;
     }
 
     .thunk-wishlist {
@@ -8254,10 +8240,7 @@ header .taiowc-cart-item{
     .sticky-header-col3 .thunk-icon .cart-icon a.cart-contents i, .sticky-header .header-icon a i {
         font-size:18px;
     }
-.sticky-header-col3 .cart-count-item {
-    top: -18px;
-    left: auto;
-}
+
 .icon_style .tapsp-search-form,.icon_style .thaps-search-form {
     min-width: 330px!important;
 }
@@ -8604,10 +8587,6 @@ header .taiowc-cart-item{
     font-size: 18px;
 }
     
-    .thunk-icon .taiowc-icon svg, .thunk-icon .taiowc-icon img {
-    width: 1.3rem;
-    }
-   
 
     #search-box input[type="text"] {
         height: 35px;
