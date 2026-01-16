@@ -2050,7 +2050,8 @@ img {
     border-radius: 4px;
     position: relative;
 }
-.header-icon a:hover{
+.thunk-icon .header-icon a:hover,
+.cart-icon a:hover {
     color: #1c1d1e;
 }
 /*header-icon*/
@@ -2060,10 +2061,6 @@ img {
     justify-content: center;
     text-align: center;
     float: left;
-}
-
-.header-icon a:hover {
-    color: #ff0052;
 }
 
 .header-icon a i {
@@ -6308,11 +6305,6 @@ section.thunk-ribbon-section .content-wrap {
     line-height: 35px;
     margin: 0px 8px 0px 0px;
 }
-.sticky-header-col3 .thunk-icon .taiowc-cart-item{
-    height: 35px;
-    line-height: 35px;
-    background: transparent!important;
-}
 
 .sticky-header-col3 .thunk-icon .cart-icon a.cart-contents {
     position: relative;
@@ -7288,8 +7280,14 @@ display: table-cell;
     padding-top: 10px;
 }
 
-.thunk-icon .taiowc-cart-item {
+.thunk-icon .cart-icon {
     padding:0.8rem;
+}
+.sticky-header .thunk-icon .cart-icon{
+    padding: 0;
+}
+header .cart-icon{
+    max-height: 49px;
 }
  .woocommerce .th-compare-output-product a.button.product_type_simple{
 width:auto;
@@ -7358,9 +7356,6 @@ width:auto;
 .wp-block-latest-comments__comment{
   line-height: inherit;
 }
-header .taiowc-cart-item{
-    max-height: 49px;
-}
 .single-product .variations_form{
     width: 100%;
 }
@@ -7421,10 +7416,6 @@ header .taiowc-cart-item{
 }
 .cat-toggle svg{
     font-size: 21px;
-}
-header .cart-count-item{
-    top: 2px;
-    left: 25px;
 }
 @media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2)  and (orientation:landscape) {
     .thunk-product-hover {
@@ -7831,7 +7822,6 @@ header .cart-count-item{
 
     .cat-toggle {
         display: inline-flex;
-        margin-top: 12px;
     }
 
     #search-button {
@@ -8105,6 +8095,9 @@ header .cart-count-item{
 }
 
 @media screen and (max-width:767px) {
+    .thunk-icon .cart-icon{
+        padding: 0;
+    }
     .thunk-product-wrap .th-product-compare-btn.checkbox_type > span::before{
         width: 12px;
         height: 12px;
@@ -8574,8 +8567,7 @@ header .cart-count-item{
     .mhdrthree.bfr-logo .main-header-col1 {
         justify-content: center;
     }
-    .header-icon a, .thunk-icon .cart-icon a.cart-contents,
- .thunk-icon .taiowc-cart-item, .thunk-icon .taiowcp-cart-item {
+    .header-icon a, .thunk-icon .cart-icon a.cart-contents{
     height: 35px;
     width: 35px;
     line-height: 35px;
@@ -8601,11 +8593,6 @@ header .cart-count-item{
         width: 34px;
         line-height: 34px;
     }
-
-    .cat-toggle {
-        margin-top: 7px;
-    }
-
     .cat-icon i {
         font-size: 12px;
     }
@@ -9135,11 +9122,6 @@ header .cart-count-item{
 .thaps-search-form {
     width: 100% !important;
 }
-.thunk-icon .taiowc-cart-item {
-    padding: 0.4rem 0.3rem 0.4rem 0.3rem;
-    }
-
-
 
 }
 
@@ -9208,9 +9190,6 @@ header .cart-count-item{
 .below-header .thaps-search-form {
     width:100% !important;
 }
-.thunk-icon .taiowc-cart-item {
-    padding: 0.4rem 0.3rem 0.4rem 0.3rem;
-    }
 .below-header .thaps-search-form .thaps-search-autocomplete {
     min-height: 25px;
     line-height: 25px;
@@ -9228,9 +9207,6 @@ header .cart-count-item{
 .search-wrapper .thaps-search-form {
     width: 100% !important;
 }
-.thunk-icon .taiowc-cart-item {
-    padding: 0.4rem 0.3rem 0.4rem 0.3rem;
-    }
 
 }
 
@@ -9239,9 +9215,6 @@ header .cart-count-item{
 .thaps-search-form {
     width: 55% !important;
 }
-.thunk-icon .taiowc-cart-item {
-    padding: 0.4rem 0.3rem 0.4rem 0.3rem;
-    }
 
 }
 
