@@ -5069,10 +5069,6 @@ input[type="text"], input[type="email"], input[type="url"], textarea, input[type
     padding: 20px;
 }
 
-.woocommerce-checkout .thunk-content-wrap {
-    overflow: hidden;
-}
-
 .woocommerce #order_review table.shop_table thead th {
     font-size: 15px;
     letter-spacing: 1px;
