@@ -74,9 +74,7 @@ if ( has_nav_menu('open-shop-above-menu' ) ){?>
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn-abv">
               <div class="btn">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-text-align-justify w-5 h-5 text-gray-500 group-hover:text-gray-700" aria-hidden="true"><path d="M3 5h18"></path><path d="M3 12h18"></path><path d="M3 19h18"></path></svg>
                 </div>
             </button>
         </div>
@@ -123,9 +121,7 @@ function open_shop_top_header_conetnt_col2($content,$mobileopen){ ?>
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn-abv">
                 <div class="btn">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-text-align-justify w-5 h-5 text-gray-500 group-hover:text-gray-700" aria-hidden="true"><path d="M3 5h18"></path><path d="M3 12h18"></path><path d="M3 19h18"></path></svg>
                 </div>
             </button>
         </div>
@@ -173,9 +169,7 @@ function open_shop_top_header_conetnt_col3($content,$mobileopen){ ?>
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn-abv">
                 <div class="btn">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-text-align-justify w-5 h-5 text-gray-500 group-hover:text-gray-700" aria-hidden="true"><path d="M3 5h18"></path><path d="M3 12h18"></path><path d="M3 19h18"></path></svg>
                 </div>
             </button>
         </div>
@@ -302,9 +296,7 @@ $open_shop_menu_open = get_theme_mod('open_shop_mobile_menu_open','left');
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn">
                 <div class="btn">
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
+                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-text-align-justify w-5 h-5 text-gray-500 group-hover:text-gray-700" aria-hidden="true"><path d="M3 5h18"></path><path d="M3 12h18"></path><path d="M3 19h18"></path></svg>
                </div>
             </button>
         </div>
@@ -472,9 +464,7 @@ add_action('open_shop_site_preloader','open_shop_preloader');
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn-stk">
                 <div class="btn">
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
+                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-text-align-justify w-5 h-5 text-gray-500 group-hover:text-gray-700" aria-hidden="true"><path d="M3 5h18"></path><path d="M3 12h18"></path><path d="M3 19h18"></path></svg>
                </div>
             </button>
         </div>

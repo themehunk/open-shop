@@ -4,7 +4,7 @@ Tags: wide-blocks, block-patterns, block-styles, editor-style, e-commerce, blog,
 Requires at least: WordPress 5.0
 Requires PHP: 5.6
 Tested up to: 6.8
-Stable tag: 1.6.8
+Stable tag: 1.6.9
 License: GPLv3 or later
 License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -22,6 +22,11 @@ Yes our theme supports builder
 Yes, this theme is tested with latest version of WordPress, you can use it for your site.
 
 == Changelog ==
+
+= Version 1.6.9 =
+* Update: Svg Icons replaced.
+* Update: Style updated & cart icon issue resolved.
+* Update: Header icon structure updated and style modified.
 
 = Version 1.6.8 =
 * Update: Category menu hover issue resolved.
@@ -306,8 +311,8 @@ Initial release
 
 == Upgrade Notice ==
 
-= Version 1.6.8 =
-* Update: Category menu hover issue resolved.
+= Version 1.6.9 =
+* Update: Header icon style issue resolved.
 
 == Resources ==
  
