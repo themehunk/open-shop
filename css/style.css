@@ -2889,7 +2889,8 @@ img {
 .thunk-wishlist{
     margin-right: 4px;
 }
-.theme-open-shop.single-product .entry-summary .thunk-compare{
+.theme-open-shop.single-product .entry-summary .thunk-compare,
+#thnk-quick-view-content .thunk-compare{
     width: auto;
     display: inline-flex;
     margin-top: 0;

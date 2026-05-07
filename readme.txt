@@ -25,6 +25,8 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
 = Version 1.7.2 =
 * Update: Ajax Nonce verification added in wp_ajax_default_home, wp_ajax_th_activeplugin.
+* Update: Theme search & cart unused code removed.
+
 = Version 1.7.1 =
 * Update: .woocommerce div.product form.cart.variations_form css added.
 * Update: TH Store One Added.
