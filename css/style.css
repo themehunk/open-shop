@@ -7279,6 +7279,10 @@ display: table-cell;
 .thunk-icon .cart-icon {
     padding:0.8rem;
 }
+header .thunk-icon .cart-icon{
+    padding: 0!important;
+    background: transparent!important;
+}
 .sticky-header .thunk-icon .cart-icon{
     padding: 0;
 }
