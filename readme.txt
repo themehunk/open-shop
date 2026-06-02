@@ -2,7 +2,7 @@
 Contributors: ThemeHunk
 Tags: wide-blocks, block-patterns, block-styles, editor-style, e-commerce, blog, grid-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-logo, custom-menu, add_editor_style, featured-image-header, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
 Requires at least: WordPress 5.0
-Requires PHP: 5.6
+Requires PHP: 7.0
 Tested up to: 7.0
 Stable tag: 1.7.3
 License: GPLv3 or later
@@ -25,6 +25,8 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
 = Version 1.7.3 =
 * Update: Cartdropdown issue resolved.
+* Update: layout position issue resolved.
+* Update: category list modified and flyout style added
 
 = Version 1.7.2 =
 * Update: Ajax Nonce verification added in wp_ajax_default_home, wp_ajax_th_activeplugin.
