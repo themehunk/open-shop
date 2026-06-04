@@ -4215,6 +4215,7 @@ select {
     margin-bottom: 20px;
     float: left;
     display: flex;
+    align-items: center;
    
 }
 
@@ -7270,7 +7271,7 @@ text-decoration: underline !important;
 
 .thunk-icon .cart-icon .taiowc-cart-item,.thunk-icon .taiowc-content .taiowc-total {
     background: transparent;
-    color: #fff;
+    color: inherit;
 }
 .cart-plugin-active-msg{
 display: table-cell;
@@ -9284,4 +9285,20 @@ width:auto;
 
 #category-flyout li:hover > .children{
     display:block;
+}
+#category-flyout .arrow{
+    position: absolute;
+    right: 10px;
+    width: 50px;
+    text-align: center;
+}
+
+#category-flyout ul li > a > .arrow:before {
+    float: initial;
+    margin-right: 0px;
+    display: inline;
+    content: "\f105";
+    font-family: th-icon;
+    height: auto;
+    text-shadow: none;
 }
