@@ -608,9 +608,6 @@ p {
 }
 
 .top-header-bar, .main-header-bar, .top-footer-bar, .below-footer-bar, .widget-footer-wrap, .widget-cs-container {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
