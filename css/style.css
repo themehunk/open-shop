@@ -6515,15 +6515,7 @@ section.thunk-ribbon-section .content-wrap {
 /*text ellips css start*/
 
 /*******************/
-.thunk-woo-product-list .woocommerce-loop-product__title {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    line-height: 24px;
-    max-height: 24px;
-}
+
 
 .thunk-list .thunk-product-content .woocommerce-LoopProduct-title {
     overflow: hidden;
@@ -6542,18 +6534,8 @@ section.thunk-ribbon-section .content-wrap {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     line-height: 21px;
-    max-height: 21px;
 }
 
-/*.thunk-title .title{
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp:1; 
-  line-height:28px; 
-   max-height:28px;
-}*/
 span.product-title {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -6571,7 +6553,6 @@ span.product-title {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     line-height: 35px;
-    max-height: 35px;
 }
 
 .thunk-list-view .thunk-woo-product-list .woocommerce-loop-product__title {

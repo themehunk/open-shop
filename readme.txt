@@ -25,6 +25,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
 = Version 1.7.4 =
 * Update: Style updated.
+* Update: Title height issue resolved.
 
 = Version 1.7.3 =
 * Update: Cartdropdown issue resolved.
